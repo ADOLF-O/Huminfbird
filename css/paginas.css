@@ -1,0 +1,39 @@
+/* ----section de páginas--- -----------------------------------------*/
+
+.paginasContainer{
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    color: var(--color2);
+    background: #ffffff;
+    text-align: center;
+    width: 100%;
+  }
+  .paginasContainer > div{
+    display: flex;
+    width: 98%;
+    margin: 0 auto;
+    align-items: center;
+    background: var(--color1);
+    color: var(--color4);
+    border-radius: 15px;
+    overflow: hidden;
+   
+  }
+  
+  .paginasContainer > div + div{
+    margin-top: 2rem;
+    background: var(--color1);
+  }
+  
+  .paginasContainer > div > img{
+    width: 45rem;
+    height: 40rem;
+    border-radius: 2rem;
+  
+  }
+  
+  .paginasContainer > div > p{
+    width: 100%;
+    min-height: 100%;
+    
+  }

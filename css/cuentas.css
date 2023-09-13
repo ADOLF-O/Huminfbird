@@ -1,0 +1,164 @@
+.Aentrada{
+  animation: carga 1s ;
+}
+
+.ahumento{
+  animation: ahumento 1s ;
+}
+
+.headerDelMain{
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .headerDelMain video{
+    width: 100%;
+  
+  }
+  .headerDelMain > div{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--color4);
+    font-size: 4rem;
+    text-align: center;
+  }
+  
+  .headerDelMain > div > a{
+    border-radius: 0px 0px 40px 40px;
+    background: var(--color3);
+    padding: 0 10px;
+    color: var(--color4);
+    margin-top: 10px;
+    z-index: 100;
+    width: 40rem;
+  
+  }
+  
+  .headerDelMain > div > a:hover{
+    transform: scale(.9);
+  
+  }
+  
+  .main .intro{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--color2);
+    padding: 0 1rem;
+  }
+  
+  /* ----main seccion de cuentas-- */
+  
+  .cardconteiner, .cardconteinerlog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+
+  
+  .cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+  }
+  .cards > div{
+   text-align: center;
+   font-size: 3rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: linear-gradient(40deg, var(--color4), var(--color1));
+   border-radius: 30px;
+   box-shadow: 0 0 20px 8px var(--color1);
+   overflow: hidden;
+   color: var(--color1);
+  }
+  
+  .cards > div > img{
+    width: 33rem;
+    height: 30rem;
+    padding: 2rem 1rem;
+  }
+  
+  .cards div > a {
+    display: flex;
+    width: 80%;
+    height: 5rem;
+    margin-bottom: 10px;
+    /* outline: solid red 2px; */
+    color: var(--color4);
+    border-radius: 15px ;
+    overflow: hidden;
+    background: var(--color3);
+    align-items: center;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .cards div h3{
+    font-size: 3rem;
+  }
+   .cards div > a > img{
+    position:absolute;
+    left: 0;
+    width: 20%;
+    height: 100%;
+  }
+  .cards div > a > p{
+    margin-left: 3rem;
+    font-size: 80%;
+  }
+  
+  .enlaceCards  {
+    background: var(--color3);
+    padding: 10px 0px;
+    color: var(--color4);
+    width: 45rem;
+    font-size: 4rem;
+    text-align: center;
+    border-radius: 25px 25px 25px 25px;
+    margin-top: 4rem;
+    
+    
+  
+  }
+
+  .hbo{
+    background: linear-gradient(40deg, rgb(157, 0, 255), rgb(56, 0, 175));
+  }
+  .disney{
+    background: linear-gradient(40deg, rgb(6, 0, 125), rgb(0, 149, 195));
+  }
+  .netflix{
+    background: linear-gradient(40deg, rgb(0, 0, 0), rgb(115, 1, 1));
+  }
+  .amazon{
+    background: linear-gradient(40deg, rgb(0, 0, 0) 30%, rgb(88, 216, 255));
+  }
+  .blim{
+    background: linear-gradient(40deg, rgb(0, 0, 0), rgb(77, 1, 199));
+  }
+  .crunchy{
+    background: linear-gradient(40deg, rgb(0, 0, 0), rgb(58, 31, 0));
+  }
+  .paramount{
+    background: linear-gradient(40deg, rgb(0, 0, 0), rgb(50, 50, 50));
+  }
+  .spotify{
+    background: linear-gradient(40deg, rgb(0, 0, 0), rgb(0, 137, 41));
+  }
+  .star{
+    background: linear-gradient(40deg, rgb(77, 0, 29), rgb(122, 61, 0));
+  }
+  .vix{
+    background: linear-gradient(40deg, rgb(0, 0, 0), rgba(134, 60, 0, 0.825));
+  }
+  
