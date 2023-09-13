@@ -122,20 +122,6 @@ animation: log .5s ease-in-out;
 }
 
 
-
-
-/* ---animacion de las letras del header del main-- */
-
-@keyframes carga{
-  0%{
-    transform: scale(.5);
-  }
-  100%{
-    transform: scale(1);
-  }
-  
-}
-
 /* --animacion del menu responsive-- */
 
 @keyframes log{

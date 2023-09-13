@@ -69,6 +69,13 @@
     justify-content: space-evenly;
     margin: 20px 0;
   }
+  .poster{
+    width: 110rem;
+    margin: 5rem 0;
+    height: 60rem;
+    border-radius: 5rem;
+  }
+
   .cards > div{
    text-align: center;
    font-size: 3rem;
@@ -80,6 +87,7 @@
    box-shadow: 0 0 20px 8px var(--color1);
    overflow: hidden;
    color: var(--color1);
+   margin-top: 2rem;
   }
   
   .cards > div > img{

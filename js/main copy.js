@@ -8,6 +8,8 @@ function main(){
     const enlaceCards = document.querySelector(".enlaceCards");
     const padre = document.querySelector(".contenedorBody");
     const cardconteinerlog = document.querySelector(".cardconteinerlog");
+    const contenedorPaginas = document.querySelector(".paginasContainer");
+    const contenedorRopa = document.querySelector(".ropa");
    
 
     
@@ -38,18 +40,23 @@ function main(){
     function eventos(e){
       
         if(e.target.nodeName == "A"){
-            if(e.target.className == "enlaceCards"){
+            if(e.target.className == "enlaceCards" || e.target.className == "enlaceCardsH" ){
+
                 cardconteinerlog.classList.toggle("inactive");
+                contenedorPaginas.classList.toggle("inactive");
+                contenedorRopa.classList.toggle("inactive");
+
                 if(enlaceCards.textContent == "Ver Catálogo Completo"){
-                    enlaceCards.textContent = "Guardar Catálogo"
+                    enlaceCards.textContent = "Guardar Catálogo";
+                    
 
-                }else if(enlaceCards.textContent == "Guardar Catálogo"){
+                }else{
                     enlaceCards.textContent = "Ver Catálogo Completo"};};// if anidado del if principal 
-
-            }// if principal
-        else if(e.target.nodeName == "IMG"){
+}// if principal
+        
+        else if(e.target.className == "menuham inactive"){
             menuresponsive.classList.toggle("inactive");
-            } ;
+    } ;
 } ;//función eventos
-} ;//función main
+};//función main
     
