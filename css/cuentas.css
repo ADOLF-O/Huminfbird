@@ -59,6 +59,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding-bottom: 4rem;
   }
 
 
@@ -133,7 +134,7 @@
     font-size: 4rem;
     text-align: center;
     border-radius: 25px 25px 25px 25px;
-    margin-top: 4rem;
+   
     
     
   

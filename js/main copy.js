@@ -40,18 +40,21 @@ function main(){
     function eventos(e){
       
         if(e.target.nodeName == "A"){
-            if(e.target.className == "enlaceCards" || e.target.className == "enlaceCardsH" ){
+            if(e.target.className == "enlaceCards" || "a"){
 
                 cardconteinerlog.classList.toggle("inactive");
                 contenedorPaginas.classList.toggle("inactive");
                 contenedorRopa.classList.toggle("inactive");
-                padre.style.backgroundColor = "#000";
+                menuresponsive.classList.add("inactive");
+                
+                
 
                 if(enlaceCards.textContent == "Ver Catálogo Completo"){
                     enlaceCards.textContent = "Guardar Catálogo";
                     
 
                 }else{
+                    
                     enlaceCards.textContent = "Ver Catálogo Completo"};};// if anidado del if principal 
 }// if principal
         
