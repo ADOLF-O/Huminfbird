@@ -45,6 +45,7 @@ function main(){
                 cardconteinerlog.classList.toggle("inactive");
                 contenedorPaginas.classList.toggle("inactive");
                 contenedorRopa.classList.toggle("inactive");
+                padre.style.backgroundColor = "#000";
 
                 if(enlaceCards.textContent == "Ver Catálogo Completo"){
                     enlaceCards.textContent = "Guardar Catálogo";

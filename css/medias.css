@@ -43,6 +43,8 @@
    
      .menuham{
        display: inline-block !important;
+       border-radius: 50rem;
+       width: 5rem;
      }
      .menuresponsive{
       margin-top: 43rem;
@@ -128,8 +130,8 @@
    
     .menuham{
       width: 4rem;
-      height: 4rem;
-      margin-top: -.8rem; 
+      
+ 
     }
 
     .menuresponsive{
@@ -184,6 +186,7 @@
     }
     .cards div{
       margin-top: 0rem;
+      border-radius: 1rem;
     }
      .cards div img{
        width: 11rem;
