@@ -76,6 +76,8 @@
      .enlaceCards{
        width: 30rem;
        font-size: 1.5rem;
+       margin-top: 0;
+       margin-bottom: 4.8rem;
      }
      
    
@@ -168,6 +170,10 @@
    }
    
    @media screen and (max-width: 480px){
+    /* menu responsive */
+    .enlaceCards{
+      margin-bottom: 4.1rem;
+    }
      /* header del main */
      .headerDelMain > div{
        font-size: 1rem;

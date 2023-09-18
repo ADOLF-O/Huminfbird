@@ -4,11 +4,20 @@
   --color3: #00ADB5;
   --color4: #EEEEEE;
   --color5: #a800ae;
+  --negro: #000;
+  --font2:'Rubik', sans-serif;
   --font: 'Secular One', sans-serif;
-  --video: "../humingbird/bgvideo.mp4";
 
-
-
+}
+.abc{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  animation: introlog 3.5s ease-in-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  
 }
 
 .inactive{
@@ -33,6 +42,7 @@ html{
 }
 
 body{
+  
   font-family: var(--font);
   width: 100%;
   height: 100%;
@@ -97,7 +107,7 @@ body{
 .menuresponsive{
 position: absolute;
 width: 100%;
-background:var(--color1);
+background: var(--color1);
 height: 35rem;
 margin-top: 43rem;
 text-align: center;
@@ -115,41 +125,8 @@ animation: log .5s ease-in-out;
 /* -----Css Main---- ------------------*/
 
 .main{
-  background: var(--color4);
   grid-area: main;
   margin-top: 5rem;
 }
 
 
-/* --animacion del menu responsive-- */
-
-@keyframes log{
-  
-  0%{
-    transform: translate(-1000px);
-  }
-  100%{
-    transform: translate(0px);
-  }
-  
-}
-
-@keyframes carga {
-  0%{
-    transform: scale(20);
-  }
-  100%{
-    transform: scale(1);
-  }
-  
-  
-}
-
-@keyframes ahumento {
-  0%{
-    transform: scale(0);
-  }
-  100%{
-    transform: scale(1);
-  }
-}

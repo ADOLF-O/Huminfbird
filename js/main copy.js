@@ -1,5 +1,6 @@
 window.addEventListener("load", main);
 
+
 function main(){
 
     // ---seleccionar elementos-----
@@ -10,6 +11,10 @@ function main(){
     const cardconteinerlog = document.querySelector(".cardconteinerlog");
     const contenedorPaginas = document.querySelector(".paginasContainer");
     const contenedorRopa = document.querySelector(".ropa");
+    const introDelMain = document.querySelector(".intro");
+    const paginasContainerLog = document.querySelector(".paginasContainerLog");
+    const enlacePaginas = document.querySelector(".enlacePaginas");
+    const contenedorCuentas = document.querySelector(".cuentas");
    
 
     
@@ -40,13 +45,21 @@ function main(){
     function eventos(e){
       
         if(e.target.nodeName == "A"){
-            if(e.target.className == "enlaceCards" || "a"){
+            if(e.target.className == "enlaceCards" || e.target.className ==  "enlaceCardsH"){
 
-                cardconteinerlog.classList.toggle("inactive");
-                contenedorPaginas.classList.toggle("inactive");
-                contenedorRopa.classList.toggle("inactive");
+                padre.style.backgroundColor = "#000"
                 menuresponsive.classList.add("inactive");
-                
+
+                contenedorCuentas.classList.remove("inactive");
+                introDelMain.style.color = "#fff"
+                cardconteinerlog.classList.remove("inactive");
+
+                contenedorPaginas.classList.add("inactive");
+                paginasContainerLog.classList.add("inactive");
+                enlacePaginas.textContent = "Conocer Mas"
+
+                contenedorRopa.classList.add("inactive");
+
                 
 
                 if(enlaceCards.textContent == "Ver Catálogo Completo"){
@@ -54,8 +67,41 @@ function main(){
                     
 
                 }else{
+                    enlaceCards.textContent = "Ver Catálogo Completo"
+                    padre.style.backgroundColor = "#fff";
+
+                    introDelMain.style.color = "var(--color2)";
                     
-                    enlaceCards.textContent = "Ver Catálogo Completo"};};// if anidado del if principal 
+                    cardconteinerlog.classList.add("inactive");
+
+                    contenedorPaginas.classList.remove("inactive");
+                    contenedorRopa.classList.remove("inactive");
+
+                };
+                    
+
+
+            }else if(e.target.className == "enlacePaginas"){
+        
+                paginasContainerLog.classList.remove("inactive");
+
+                contenedorCuentas.classList.add("inactive");
+                contenedorRopa.classList.add("inactive");
+
+                if(enlacePaginas.textContent == "Conocer Mas"){
+                    enlacePaginas.textContent = "Ver Menos"
+                    
+                }else{
+                    enlacePaginas.textContent = "Conocer Mas"
+
+                    paginasContainerLog.classList.add("inactive");
+
+                    contenedorCuentas.classList.remove("inactive");
+                    contenedorRopa.classList.remove("inactive");
+                };
+
+                
+            }// if anidado 
 }// if principal
         
         else if(e.target.className == "menuham inactive"){
@@ -64,3 +110,48 @@ function main(){
 } ;//función eventos
 };//función main
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const imagen1 = document.getElementById("imagen1");
+// const imagen2 = document.getElementById("imagen2");
+
+// const cargarImg = (entra, mirador) =>  {
+//   entra.forEach((propiedades) => {
+
+//      if(propiedades.isIntersecting){
+//          propiedades.target.classList.add("animacion");
+        
+//       }
+//      //  else{
+//      //    propiedades.target.classList.remove("animacion");
+
+//      //  };
+
+    
+
+//   });
+// };
+
+// const observador = new IntersectionObserver(cargarImg, {
+//    root: null, 
+//    rootMargin: "0px",
+//    threshold: 1.0
+// });
+
+// observador.observe(imagen1);
+// observador.observe(imagen2);

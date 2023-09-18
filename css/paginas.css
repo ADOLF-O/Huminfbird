@@ -1,26 +1,49 @@
-/* ----section de páginas--- -----------------------------------------*/
+/* ----section de páginas--------------------------------------------*/
 
-.paginasContainer{
-    margin-top: 5rem;
+.paginasContainer, .paginasContainerLog{
     font-size: 2.5rem;
-    color: var(--color2);
-    background: #ffffff;
-    text-align: center;
     width: 100%;
-  }
-  .paginasContainer > div{
+    background: var(--color2);
+    font-family: var(--font2);
     display: flex;
-    width: 98%;
-    margin: 0 auto;
+    flex-direction: column;
     align-items: center;
-    background: var(--color1);
+    padding-bottom: 3rem ;
+
+  }
+
+  .textos{
+    width: 100%;
+    text-align: center;
     color: var(--color4);
-    border-radius: 15px;
-    overflow: hidden;
-   
+    padding-top: 1rem;
+    margin: 2rem 0 1rem 0;
+  }
+  .textos > h2{
+    font-size: 5rem;
+  }
+
+  .imgP1, .imgP2, .imgP3{
+    width: 60%;
+    opacity: 0;
+    margin-top: 1rem;
+  }
+
+ 
+
+  .paginasContainer > a{
+    width: 20rem;
+    height: 4rem;
+    background: #000;
+    color: var(--color4);
+    outline: 2px black solid;
+    border-radius: 20px;
+    padding-top: 4px;
+    text-align: center;
+
   }
   
-  .paginasContainer > div + div{
+  /* .paginasContainer > div + div{
     margin-top: 2rem;
     background: var(--color1);
   }
@@ -36,4 +59,4 @@
     width: 100%;
     min-height: 100%;
     
-  }
+  } */
