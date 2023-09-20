@@ -1,3 +1,11 @@
+.log{
+  animation: log 1s ease-in-out;
+  opacity: 1;
+}
+.deslog{
+  animation: deslog .7 ease-out;
+  opacity: 0;
+}
 .Aentrada{
     animation: carga 1s ;
   }
@@ -14,15 +22,29 @@
   animation: scroll2 1.2s ease-in-out ;
   opacity: 1;
 }
+.sliderP{
+  animation: sliderP 2.5s ease-in-out;
+}
   /* --animacion del menu responsive-- */
 
 @keyframes log{
   
     0%{
-      transform: translate(-1000px);
+      opacity: 0;
     }
     100%{
-      transform: translate(0);
+      opacity: 1;
+    }
+    
+  }
+
+  @keyframes deslog{
+  
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
     }
     
   }
@@ -84,4 +106,13 @@
         
     }
     
+  }
+
+  @keyframes sliderP {
+    0%{
+      transform: translatex(-800px);
+    }    
+    100%{
+      transform: translatex(0);
+    }
   }

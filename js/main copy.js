@@ -10,7 +10,7 @@ function main(){
     const padre = document.querySelector(".contenedorBody");
     const cardconteinerlog = document.querySelector(".cardconteinerlog");
     const contenedorPaginas = document.querySelector(".paginasContainer");
-    const contenedorRopa = document.querySelector(".ropa");
+    // const contenedorRopa = document.querySelector(".ropa");
     const introDelMain = document.querySelector(".intro");
     const paginasContainerLog = document.querySelector(".paginasContainerLog");
     const enlacePaginas = document.querySelector(".enlacePaginas");
@@ -43,7 +43,6 @@ function main(){
     // };
 
     function eventos(e){
-      
         if(e.target.nodeName == "A"){
             if(e.target.className == "enlaceCards" || e.target.className ==  "enlaceCardsH"){
 
@@ -58,7 +57,7 @@ function main(){
                 paginasContainerLog.classList.add("inactive");
                 enlacePaginas.textContent = "Conocer Mas"
 
-                contenedorRopa.classList.add("inactive");
+                // contenedorRopa.classList.add("inactive");
 
                 
 
@@ -75,7 +74,7 @@ function main(){
                     cardconteinerlog.classList.add("inactive");
 
                     contenedorPaginas.classList.remove("inactive");
-                    contenedorRopa.classList.remove("inactive");
+                    // contenedorRopa.classList.remove("inactive");
 
                 };
                     
@@ -86,7 +85,7 @@ function main(){
                 paginasContainerLog.classList.remove("inactive");
 
                 contenedorCuentas.classList.add("inactive");
-                contenedorRopa.classList.add("inactive");
+                
 
                 if(enlacePaginas.textContent == "Conocer Mas"){
                     enlacePaginas.textContent = "Ver Menos"
@@ -97,7 +96,7 @@ function main(){
                     paginasContainerLog.classList.add("inactive");
 
                     contenedorCuentas.classList.remove("inactive");
-                    contenedorRopa.classList.remove("inactive");
+                    // contenedorRopa.classList.remove("inactive");
                 };
 
                 
@@ -106,6 +105,8 @@ function main(){
         
         else if(e.target.className == "menuham inactive"){
             menuresponsive.classList.toggle("inactive");
+            menuresponsive.classList.add("log");
+            
     } ;
 } ;//función eventos
 };//función main

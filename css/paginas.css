@@ -1,6 +1,7 @@
 /* ----section de páginas--------------------------------------------*/
 
 .paginasContainer, .paginasContainerLog{
+  margin-top: 2rem;
     font-size: 2.5rem;
     width: 100%;
     background: var(--color2);
@@ -8,7 +9,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 3rem ;
+    padding-bottom: 6rem ;
+    overflow: hidden;
 
   }
 
@@ -18,12 +20,13 @@
     color: var(--color4);
     padding-top: 1rem;
     margin: 2rem 0 1rem 0;
+    padding: 0 1.5rem;
   }
   .textos > h2{
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
-  .imgP1, .imgP2, .imgP3{
+  .imgP1, .imgP2, .imgP3, .imgP4{
     width: 60%;
     opacity: 0;
     margin-top: 1rem;
@@ -31,7 +34,7 @@
 
  
 
-  .paginasContainer > a{
+  .enlacePaginas {
     width: 20rem;
     height: 4rem;
     background: #000;
@@ -42,21 +45,30 @@
     text-align: center;
 
   }
-  
-  /* .paginasContainer > div + div{
-    margin-top: 2rem;
-    background: var(--color1);
-  }
-  
-  .paginasContainer > div > img{
-    width: 45rem;
-    height: 40rem;
-    border-radius: 2rem;
-  
-  }
-  
-  .paginasContainer > div > p{
+
+
+  .contenedorSlider{
     width: 100%;
-    min-height: 100%;
     
-  } */
+    display: flex;
+    align-items:center;
+    padding: 1rem 4rem;
+    background: #fff;
+    justify-content: center;
+    overflow: hidden;
+
+  }
+ 
+   
+  .contenedorSlider img{
+    width: 70%; 
+    height: 70%;
+ 
+  } 
+   
+
+
+
+
+  
+  
