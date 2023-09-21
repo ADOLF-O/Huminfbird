@@ -7,6 +7,7 @@ function main(){
     const imgP3 = document.querySelector(".imgP3");
     const imgP4 = document.querySelector(".imgP4");
 
+    const spanC = document.querySelector(".info__span");
 
     const imgs = [
                     "../humingbird/pagina/sliderP1.png",
@@ -15,7 +16,13 @@ function main(){
                     "../humingbird/pagina/sliderP4.png",
                     
     ]
-    let contador = 1;
+  
+    let contadorC = 950;
+
+
+    
+   
+    
     
 
 // --------------Observador--------------------------------------
@@ -32,6 +39,25 @@ function main(){
                     element.target.classList.add("scroll1");
                 }else if(element.target.className == "imgP2" || element.target.className == "imgP4"){
                     element.target.classList.add("scroll2");
+                }else if(element.target.className == "info__span"){
+
+                        if(contadorC === 950){
+
+                            let intervalo = setInterval(() =>{
+                                contadorC++;
+                                spanC.textContent = "+" + contadorC ;
+                                if(contadorC == 1000){
+                                    clearInterval(intervalo);
+                                        
+                                }
+                            }, 30)};
+
+                        
+
+            
+
+                    
+                    
                 }
                 // element.target.classList.add("animacionScroll")
                 
@@ -47,29 +73,25 @@ function main(){
     observador.observe(imgP2)
     observador.observe(imgP3)
     observador.observe(imgP4)
+    observador.observe(spanC)
 
 // --------------Slider---------------------------------------
-    document.imagen.src = imgs[0]
-
     
 
 
 
-    
+
+// -------------contador------------
 
 
-// --------------Funciones------------------------------------------
 
-function funcionSlider(e){
-   
-    if(contador == 4){
-        contador = 0;    
-    }
-    document.imagen.src = imgs[contador]
-  
-    contador++
+
 
 }
-setInterval(funcionSlider, 2500);
 
-}
+
+
+
+
+
+

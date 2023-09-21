@@ -15,6 +15,16 @@
   display: none !important;
 }
 
+.menuWhats{
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  background: var(--color4);
+  box-shadow: 0 5px 10px 2px black;
+  z-index: 400;
+  
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -95,6 +105,7 @@ body{
 }
 
 
+
 .menuresponsive{
 backdrop-filter: blur(5px);
 width: 100vw;
@@ -135,6 +146,25 @@ position: fixed;
 .main{
   grid-area: main;
   margin-top: 5rem;
+}
+
+.info{
+  font-family: var(--font2);
+  padding-top: 5rem;
+  background: white;
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.info__span{
+  font-size: 8rem;
+}
+.info__p{
+  font-size: 4rem;
+  text-align: center;
 }
 
 

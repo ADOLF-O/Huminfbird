@@ -93,11 +93,11 @@
     }
 
      .textos{
-      font-size: 1.5rem;
+      font-size: 2.2rem;
      }
 
      .textos h2{
-      font-size: 2rem;
+      font-size: 2.5rem;
      }
 
      .imgP1, .imgP2, .imgP3{
@@ -163,18 +163,25 @@
 
 
     /* seccion de páginas */
+    .paginasContainer{
+      margin-top: 0rem;
+    }
     .textos{
       font-size: 1.5rem;
      }
 
      .textos h2{
-      font-size: 2rem;
+      font-size: 3rem;
      }
 
      .imgP1, .imgP2, .imgP3{
       width: 80%;
    
  
+    }
+    .enlacePaginasLog{
+      width: 15rem;
+      height: 3rem;
     }
 
      .enlacePaginas{
@@ -253,11 +260,11 @@
    
      /* seccion de páginas */
     .textos{
-      font-size: .8rem;
+      font-size: 1.5rem;
      }
 
      .textos h2{
-      font-size: 1rem;
+      font-size: 1.5rem;
      }
 
      .imgP1, .imgP2, .imgP3{

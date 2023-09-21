@@ -80,8 +80,11 @@ function main(){
                     
 
 
-            }else if(e.target.className == "enlacePaginas"){
-        
+            }else if(e.target.className == "enlacePaginas" || e.target.className == "enlacePaginasH" ){
+                
+                menuresponsive.classList.add("inactive");
+                
+                contenedorPaginas.classList.remove("inactive");
                 paginasContainerLog.classList.remove("inactive");
 
                 contenedorCuentas.classList.add("inactive");

@@ -1,7 +1,6 @@
 /* ----section de páginas--------------------------------------------*/
 
 .paginasContainer, .paginasContainerLog{
-  margin-top: 2rem;
     font-size: 2.5rem;
     width: 100%;
     background: var(--color2);
@@ -11,6 +10,7 @@
     align-items: center;
     padding-bottom: 6rem ;
     overflow: hidden;
+    margin-top: 2rem;
 
   }
 
@@ -32,9 +32,30 @@
     margin-top: 1rem;
   }
 
- 
+  .enlacePaginasLog {
+    width: 20rem;
+    height: 4rem;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #000;
+    margin-top: 4rem;
+    font-size: 100%;
+    
 
-  .enlacePaginas {
+  }
+  .enlacePaginasLog img{
+    width: 20%;
+    height: 80%;
+    
+  }
+  
+
+  .enlacePaginas{
     width: 20rem;
     height: 4rem;
     background: #000;
@@ -47,24 +68,9 @@
   }
 
 
-  .contenedorSlider{
-    width: 100%;
-    
-    display: flex;
-    align-items:center;
-    padding: 1rem 4rem;
-    background: #fff;
-    justify-content: center;
-    overflow: hidden;
+ 
 
-  }
- 
-   
-  .contenedorSlider img{
-    width: 70%; 
-    height: 70%;
- 
-  } 
+
    
 
 
