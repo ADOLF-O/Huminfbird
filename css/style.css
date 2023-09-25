@@ -151,13 +151,14 @@ position: fixed;
 .info{
   font-family: var(--font2);
   padding-top: 2rem;
-  background: black;
-  width: 100%;
- 
+  background: var(--color4);
+  width: 95%;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--color4);
+  border-radius: 5px;
+  
   
 }
 .info__span{
@@ -197,8 +198,9 @@ position: fixed;
   margin: 1rem 2rem;
 }
 .metodosDepago div img:nth-child(1){
-  height: 11.5rem;
-  margin: 1rem 0rem;
+  height: 11  rem;
+  margin: 1rem -1rem;
+ 
 
 }
 
