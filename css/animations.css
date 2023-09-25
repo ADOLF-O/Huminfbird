@@ -25,6 +25,11 @@
 .sliderP{
   animation: sliderP 2.5s ease-in-out;
 }
+
+.metodosDepago .pagos{
+  animation: pagos 3s ease-in-out;
+  opacity: 1;
+}
   /* --animacion del menu responsive-- */
 
 @keyframes log{
@@ -108,11 +113,13 @@
     
   }
 
-  @keyframes sliderP {
+  @keyframes pagos {
     0%{
-      transform: translatex(-800px);
+      transform: scale(.9);
+      opacity: 0;
     }    
     100%{
-      transform: translatex(0);
+      transform: scale(1);
+      opacity: 1;
     }
   }

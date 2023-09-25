@@ -1,5 +1,5 @@
 :root{
-  --color1: #222831;
+  --color1: #000;
   --color2: #393E46;
   --color3: #00ADB5;
   --color4: #EEEEEE;
@@ -150,13 +150,14 @@ position: fixed;
 
 .info{
   font-family: var(--font2);
-  padding-top: 5rem;
-  background: white;
+  padding-top: 2rem;
+  background: black;
   width: 100%;
-  height: 30rem;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--color4);
   
 }
 .info__span{
@@ -166,5 +167,40 @@ position: fixed;
   font-size: 4rem;
   text-align: center;
 }
+
+/* -------sección de pagos----- */
+.metodosDepago{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.5rem;
+  text-align: center;
+  background: black;
+  color: var(--color4);
+  overflow: hidden;
+  
+}
+.metodosDepago h2,p{
+  padding: 1rem 2rem;
+}
+.metodosDepago div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+
+}
+.metodosDepago div img{
+  width: 17rem;
+  height: 10rem;
+  margin: 1rem 2rem;
+}
+.metodosDepago div img:nth-child(1){
+  height: 11.5rem;
+  margin: 1rem 0rem;
+
+}
+
 
 

@@ -6,16 +6,9 @@ function main(){
     const imgP2 = document.querySelector(".imgP2");
     const imgP3 = document.querySelector(".imgP3");
     const imgP4 = document.querySelector(".imgP4");
+    const pagos = document.querySelector("#pagos");
 
     const spanC = document.querySelector(".info__span");
-
-    const imgs = [
-                    "../humingbird/pagina/sliderP1.png",
-                    "../humingbird/pagina/sliderP2.png",
-                    "../humingbird/pagina/sliderP3.png",
-                    "../humingbird/pagina/sliderP4.png",
-                    
-    ]
   
     let contadorC = 950;
 
@@ -52,14 +45,10 @@ function main(){
                                         
                                 }
                             }, 30)};
+                        }else if(element.target.id == "pagos"){
+                            pagos.classList.add("pagos")
 
-                        
-
-            
-
-                    
-                    
-                }
+                        }
                 // element.target.classList.add("animacionScroll")
                 
             }})};
@@ -75,17 +64,7 @@ function main(){
     observador.observe(imgP3)
     observador.observe(imgP4)
     observador.observe(spanC)
-
-// --------------Slider---------------------------------------
-    
-
-
-
-
-// -------------contador------------
-
-
-
+    observador.observe(pagos)
 
 
 }
