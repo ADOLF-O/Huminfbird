@@ -48,6 +48,7 @@ function main(){
                                 spanC.textContent = "+" + contadorC ;
                                 if(contadorC == 1000){
                                     clearInterval(intervalo);
+                                    
                                         
                                 }
                             }, 30)};

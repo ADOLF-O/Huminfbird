@@ -10,7 +10,6 @@
     align-items: center;
     padding-bottom: 6rem ;
     overflow: hidden;
-    margin-top: 2rem;
 
   }
 
@@ -19,8 +18,11 @@
     text-align: center;
     color: var(--color4);
     padding-top: 1rem;
-    margin: 2rem 0 1rem 0;
+    margin: 50rem 0 1rem 0;
     padding: 0 1.5rem;
+  }
+  .paginasContainer > .textos:nth-child(1){
+    margin-top: 5rem;
   }
   .textos > h2{
     font-size: 4rem;
@@ -46,11 +48,13 @@
     margin-top: 4rem;
     font-size: 100%;
     
+    
 
   }
   .enlacePaginasLog img{
-    width: 20%;
-    height: 80%;
+    width: 15%;
+    height: 70%;
+    margin-right: 1rem;
     
   }
   

@@ -64,8 +64,11 @@
       width: 52rem;
       height: 32rem;
     }
+    .cards div h3{
+      font-size: 2rem;
+    }
      .cards div a{
-      height: 3.5rem;
+      height: 4.5rem;
      }
      .cards div a p{
       font-size: 1.5rem;
@@ -144,9 +147,7 @@
 
      /* ----main seccion de cuentas-- */
 
-     .cards div{
-      box-shadow: 0 0 20px 0px var(--color4);
-     }
+    
      .poster{
       width: 40rem;
       height: 20rem;
@@ -159,6 +160,22 @@
     }
     .cards div h3{
       font-size: 2rem;
+    }
+
+    .info{
+      padding-top: 2rem;
+      width: 100%;
+      height: 25rem;
+    
+    }
+    .info__span{
+      font-size: 8rem;
+      font-size: 6rem;
+    }
+    .info__p{
+      font-size: 4rem;
+      text-align: center;
+      font-size: 2.5rem;
     }
 
 
@@ -233,6 +250,7 @@
      .cards div img{
        width: 11rem;
        height: 11rem;
+       padding: 1rem 0;
      }
    
      .cards div h3{
@@ -250,7 +268,12 @@
         font-size: .8rem;
         padding: .3rem 0;
      }
-   
+     .cards div a img{
+      padding: 0;
+      height: 2rem;
+      width: 2rem;
+    
+   }
    
      .enlaceCards{
        width: 17rem;

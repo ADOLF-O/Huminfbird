@@ -81,16 +81,17 @@
    align-items: center;
    background: var(--color2);
    border-radius: 30px;
-   box-shadow: 0 0 40px 0px var(--color4);
+   /* box-shadow: 0 0 20px 3px var(--color4); */
    overflow: hidden;
    color: var(--color1);
    margin-top: 2rem;
+   outline: solid white 2px;
   }
   
   .cards > div > img{
     width: 33rem;
     height: 30rem;
-    padding: 2rem 1rem;
+    padding: 4rem 2rem;
   }
   
   .cards div > a {
