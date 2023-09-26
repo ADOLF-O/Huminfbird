@@ -94,6 +94,7 @@
   .cards > div > img{
     width: 33rem;
     height: 30rem;
+  
     padding: 4rem 2rem;
   }
   
@@ -140,40 +141,21 @@
     font-size: 4rem;
     text-align: center;
     border-radius: 20px;
-    margin: 2rem 0;
+    margin: 4rem 0;
     outline: solid 2px white;
-    margin-top: 10rem;
+
  
   }
 
-  .hbo{
-    background: linear-gradient(40deg, rgb(157, 0, 255), rgb(56, 0, 175));
+  .cards div > img{
+    background: #000;
   }
-  .disney{
-    background: linear-gradient(40deg, rgb(6, 0, 125), rgb(0, 149, 195));
+  .cards div > .wwe{
+    background: #fff;;
   }
-  .netflix{
-    background: linear-gradient(40deg, rgb(0, 0, 0), rgb(115, 1, 1));
+  .cards div > .youtube{
+    background: #fff;
   }
-  .amazon{
-    background: linear-gradient(40deg, rgb(0, 0, 0) 30%, rgb(88, 216, 255));
+  .cards div > .office{
+    background: #fff;
   }
-  .blim{
-    background: linear-gradient(40deg, rgb(0, 0, 0), rgb(77, 1, 199));
-  }
-  .crunchy{
-    background: linear-gradient(40deg, rgb(0, 0, 0), rgb(58, 31, 0));
-  }
-  .paramount{
-    background: linear-gradient(40deg, rgb(0, 0, 0), rgb(50, 50, 50));
-  }
-  .spotify{
-    background: linear-gradient(40deg, rgb(0, 0, 0), rgb(0, 137, 41));
-  }
-  .star{
-    background: linear-gradient(40deg, rgb(77, 0, 29), rgb(122, 61, 0));
-  }
-  .vix{
-    background: linear-gradient(40deg, rgb(0, 0, 0), rgba(134, 60, 0, 0.825));
-  }
-  

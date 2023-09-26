@@ -243,10 +243,34 @@
     margin: 0rem -1rem;
   
   }
+  /* -------footer -------- */
+
+.footer{
+  font-size: 1.1rem;
+}
+
+
+.footer div a{
+  margin: 1rem 3%;
+
+}
+
+.footer div a img{
+  width: 3rem;
+}
    }
    
    @media screen and (max-width: 480px){
     /* menu responsive */
+    .menuham{
+    
+      left: 1.2rem;
+      bottom: 1.2rem;
+      width: 4rem;
+      box-shadow: 0 5px 10px 2px black;
+    
+      
+    }
     .enlaceCards{
       margin-bottom: 4.1rem;
     }
@@ -273,7 +297,7 @@
      .cards div img{
        width: 11rem;
        height: 11rem;
-       padding: 1rem 0;
+       padding: 1rem 1rem;
      }
    
      .cards div h3{
