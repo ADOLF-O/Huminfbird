@@ -57,15 +57,12 @@ function main(){
                 paginasContainerLog.classList.add("inactive");
                 enlacePaginas.textContent = "Conocer Mas"
 
-                // contenedorRopa.classList.add("inactive");
-
-                
 
                 if(enlaceCards.textContent == "Ver Catálogo Completo"){
-                    enlaceCards.textContent = "Guardar Catálogo";
-                    
+                    enlaceCards.textContent = "Guardar Catálogo";}
 
-                }else{
+
+                else{
                     enlaceCards.textContent = "Ver Catálogo Completo"
                     padre.style.backgroundColor = "#fff";
 
@@ -73,10 +70,7 @@ function main(){
                     
                     cardconteinerlog.classList.add("inactive");
 
-                    contenedorPaginas.classList.remove("inactive");
-                    // contenedorRopa.classList.remove("inactive");
-
-                };
+                    contenedorPaginas.classList.remove("inactive");};
                     
 
 
@@ -99,11 +93,14 @@ function main(){
                     paginasContainerLog.classList.add("inactive");
 
                     contenedorCuentas.classList.remove("inactive");
-                    // contenedorRopa.classList.remove("inactive");
                 };
 
                 
-            }// if anidado 
+            }else if(e.target.className == "Contactos" ){
+                menuresponsive.classList.toggle("inactive");
+
+            }
+            // if anidado 
 }// if principal
         
         else if(e.target.className == "menuham inactive"){

@@ -343,6 +343,24 @@
      
     }
 
+    .enlacePaginasLog {
+      width: 12rem;
+      height: 2.5rem;
+     
+  
+      margin-top: 3rem;
+      
+      
+      
+  
+    }
+    .enlacePaginasLog img{
+      width: 15%;
+      height: 70%;
+      margin-right: 1rem;
+      
+    }
+
      .enlacePaginas{
       font-size: 1rem;
       width: 7rem ;
