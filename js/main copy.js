@@ -4,13 +4,15 @@ window.addEventListener("load", main);
 function main(){
 
     // ---seleccionar elementos-----
-    // const menuham = document.querySelector(".menuham");
+  
     const menuresponsive = document.querySelector(".menuresponsive");
     const enlaceCards = document.querySelector(".enlaceCards");
     const padre = document.querySelector(".contenedorBody");
     const cardconteinerlog = document.querySelector(".cardconteinerlog");
     const contenedorPaginas = document.querySelector(".paginasContainer");
-    // const contenedorRopa = document.querySelector(".ropa");
+
+    const textosPaginas = document.querySelectorAll(".textos");
+  
     const introDelMain = document.querySelector(".intro");
     const paginasContainerLog = document.querySelector(".paginasContainerLog");
     const enlacePaginas = document.querySelector(".enlacePaginas");
@@ -30,6 +32,7 @@ function main(){
 
 
     // ---funciones----
+    // function textosPagina()
 
     // function menuhamtoggle(){
 
@@ -66,7 +69,7 @@ function main(){
                     enlaceCards.textContent = "Ver Catálogo Completo"
                     padre.style.backgroundColor = "#fff";
 
-                    introDelMain.style.color = "var(--color2)";
+                    introDelMain.style.color = "var(--color1)";
                     
                     cardconteinerlog.classList.add("inactive");
 
@@ -79,6 +82,9 @@ function main(){
                 menuresponsive.classList.add("inactive");
                 
                 contenedorPaginas.classList.remove("inactive");
+                textosPaginas.forEach(a => {a.style.color = "#fff"});
+                contenedorPaginas.style.backgroundColor = "#000";
+
                 paginasContainerLog.classList.remove("inactive");
 
                 contenedorCuentas.classList.add("inactive");
@@ -93,11 +99,12 @@ function main(){
                     paginasContainerLog.classList.add("inactive");
 
                     contenedorCuentas.classList.remove("inactive");
+                    contenedorPaginas.style.backgroundColor = "#fff";
                 };
 
                 
             }else if(e.target.className == "Contactos" ){
-                menuresponsive.classList.toggle("inactive");
+                menuresponsive.classList.add("inactive");
 
             }
             // if anidado 

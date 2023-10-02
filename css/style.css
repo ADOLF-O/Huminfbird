@@ -6,7 +6,7 @@
   --color5: #a800ae;
   --negro: #000;
   --font2:'Rubik', sans-serif;
-  --font: "roboto";
+  --font: "Rubik";
 
 }
 
@@ -233,7 +233,7 @@ position: fixed;
 .footer div a img{
   width: 5rem;
   overflow: hidden;
-  border-radius: 100px;
+  border-radius: 110px;
   
 }
 

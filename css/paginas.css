@@ -3,12 +3,11 @@
 .paginasContainer, .paginasContainerLog{
     font-size: 2.5rem;
     width: 100%;
-    background: var(--color2);
     font-family: var(--font2);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 6rem ;
+    padding-bottom: 5rem ;
     overflow: hidden;
 
   }
@@ -16,16 +15,20 @@
   .textos{
     width: 100%;
     text-align: center;
-    color: var(--color4);
-    padding-top: 1rem;
+    color: var(--color1);
     margin: 50rem 0 1rem 0;
     padding: 0 1.5rem;
+
   }
   .paginasContainer > .textos:nth-child(1){
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
   .textos > h2{
     font-size: 4rem;
+    background: radial-gradient(90deg, #ec9fff,#7bffff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+   
   }
 
   .imgP1, .imgP2, .imgP3, .imgP4{
@@ -37,7 +40,7 @@
   .enlacePaginasLog {
     width: 20rem;
     height: 4rem;
-    background: rgb(255, 255, 255);
+    background: rgb(33, 255, 44);
     border-radius: 20px;
     overflow: hidden;
     display: flex;
@@ -64,11 +67,15 @@
     height: 4rem;
     background: #000;
     color: var(--color4);
-    outline: 2px black solid;
     border-radius: 20px;
     padding-top: 4px;
     text-align: center;
+    border: 1px solid white;
 
+  }
+
+  .colorTextosPagina{
+    color: #fff;
   }
 
 

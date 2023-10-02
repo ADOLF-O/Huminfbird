@@ -184,6 +184,9 @@
 
 
     /* seccion de páginas */
+
+
+
     .paginasContainer{
       margin-top: 0rem;
     }
@@ -201,8 +204,15 @@
  
     }
     .enlacePaginasLog{
-      width: 15rem;
-      height: 3rem;
+      width: 11rem;
+      height: 2rem;
+      font-size: 1.8rem;
+    }
+    .enlacePaginasLog img{
+      width: 15%;
+      height: 80%;
+      margin-right: .3rem;
+      
     }
 
      .enlacePaginas{
@@ -212,18 +222,6 @@
       height: 2rem;
      }
 
-
-
-
-     /* seccion de ropa */
-     .ropa h2{
-       font-size: 1.5rem;
-     }
-   
-     .ropa div img{
-       width: 8rem;
-       height: 8rem;
-     }
 
  /* -------sección de pagos----- */
   .metodosDepago{
@@ -284,6 +282,15 @@
      }
      
      /* ----main seccion de cuentas-- */
+     .main .intro h2,p{
+      font-size: 1.4rem;
+     }
+     .main .intro p{
+      font-size: 1rem;
+      font-weight: 600;
+     
+      
+     }
      .poster{
       width: 20rem;
       height: 10rem;
@@ -329,12 +336,13 @@
      }
    
      /* seccion de páginas */
-    .textos{
-      font-size: 1.5rem;
-     }
 
      .textos h2{
       font-size: 1.5rem;
+     }
+     .textos p{
+      font-size: 1rem;
+
      }
 
      .imgP1, .imgP2, .imgP3{
@@ -344,20 +352,16 @@
     }
 
     .enlacePaginasLog {
-      width: 12rem;
-      height: 2.5rem;
-     
-  
+      width: 8rem;
+      height: 1.7rem;
       margin-top: 3rem;
-      
-      
-      
+      font-size: 1.5rem;      
   
     }
     .enlacePaginasLog img{
       width: 15%;
       height: 70%;
-      margin-right: 1rem;
+      margin-right: .3rem;
       
     }
 

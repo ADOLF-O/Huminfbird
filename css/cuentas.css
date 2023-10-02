@@ -28,7 +28,7 @@
     color: var(--color4);
     margin-top: 10px;
     z-index: 100;
-    width: 40rem;
+    width: 48rem;
     background: var(--color1);
   
   }
@@ -42,7 +42,7 @@
     margin: 20px 0;
     text-align: center;
     font-size: 2.2rem;
-    color: var(--color2);
+    color: var(--color1);
     padding: 0 1rem;
   
   }
