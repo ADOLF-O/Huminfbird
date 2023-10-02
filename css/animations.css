@@ -1,9 +1,10 @@
 .log{
   animation: log 1s ease-in-out;
   opacity: 1;
+
 }
 .deslog{
-  animation: deslog .7 ease-out;
+  animation: deslog .7s ease-out;
   opacity: 0;
 }
 .Aentrada{

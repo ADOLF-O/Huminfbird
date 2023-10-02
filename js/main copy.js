@@ -33,18 +33,14 @@ function main(){
 
 
     // ---funciones----
-    // function textosPagina()
+    function animacionSalida(){
+        menuresponsive.classList.toggle("inactive");
+        menuresponsive.classList.remove("deslog");
+       
 
-    // function menuhamtoggle(){
+    };
+    
 
-    //     menuresponsive.classList.toggle("inactive");
-        
-        
-    // };
-
-    // function menuCuentasLog(){
-        
-    // };
 
     function eventos(e){
         if(e.target.nodeName == "A"){
@@ -121,8 +117,21 @@ function main(){
 }// if principal
         
         else if(e.target.className == "menuham inactive"){
-            menuresponsive.classList.toggle("inactive");
-            menuresponsive.classList.add("log");
+
+            if(menuresponsive.className == "menuresponsive log"){
+                menuresponsive.classList.remove("log");
+                menuresponsive.classList.add("deslog");
+
+                setTimeout(animacionSalida, 1000);
+            }else{
+                menuresponsive.classList.toggle("inactive");
+                menuresponsive.classList.add("log");
+
+            };
+
+            
+           
+            
             
     } ;
 } ;//función eventos

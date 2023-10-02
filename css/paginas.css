@@ -30,7 +30,7 @@
   }
 
   .degradadoPaginas{
-    background: linear-gradient(90deg, #efafff 30%,#abffff);
+    background: linear-gradient(90deg, #efafff 24%,#abffff);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 
