@@ -34,7 +34,7 @@ function main(){
 
     // ---funciones----
     function animacionSalida(){
-        menuresponsive.classList.toggle("inactive");
+        menuresponsive.classList.add("inactive");
         menuresponsive.classList.remove("deslog");
        
 
@@ -77,6 +77,7 @@ function main(){
             }else if(e.target.className == "enlacePaginas" || e.target.className == "enlacePaginasH" ){
                 
                 menuresponsive.classList.add("inactive");
+
                 
                 contenedorPaginas.classList.remove("inactive");
                 textosPaginas.forEach(a => {a.style.color = "#fff"});
