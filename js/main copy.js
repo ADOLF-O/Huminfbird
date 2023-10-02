@@ -12,6 +12,7 @@ function main(){
     const contenedorPaginas = document.querySelector(".paginasContainer");
 
     const textosPaginas = document.querySelectorAll(".textos");
+    const h2paginas = document.querySelectorAll(".h2-paginas");
   
     const introDelMain = document.querySelector(".intro");
     const paginasContainerLog = document.querySelector(".paginasContainerLog");
@@ -83,6 +84,8 @@ function main(){
                 
                 contenedorPaginas.classList.remove("inactive");
                 textosPaginas.forEach(a => {a.style.color = "#fff"});
+                h2paginas.forEach(a => {a.classList.add("degradadoPaginas")});
+
                 contenedorPaginas.style.backgroundColor = "#000";
 
                 paginasContainerLog.classList.remove("inactive");
@@ -100,6 +103,13 @@ function main(){
 
                     contenedorCuentas.classList.remove("inactive");
                     contenedorPaginas.style.backgroundColor = "#fff";
+
+                    textosPaginas.forEach(a => {a.style.color = "#000"});
+                    h2paginas.forEach(a => {a.classList.remove("degradadoPaginas")});
+
+                    
+
+
                 };
 
                 

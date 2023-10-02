@@ -25,10 +25,15 @@
   }
   .textos > h2{
     font-size: 4rem;
-    background: radial-gradient(90deg, #ec9fff,#7bffff);
+    
+   
+  }
+
+  .degradadoPaginas{
+    background: linear-gradient(90deg, #efafff 30%,#abffff);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-   
+
   }
 
   .imgP1, .imgP2, .imgP3, .imgP4{
