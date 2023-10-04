@@ -47,15 +47,18 @@ function main(){
             if(e.target.className == "enlaceCards" || e.target.className ==  "enlaceCardsH"){
 
                 padre.style.backgroundColor = "#000"
-                menuresponsive.classList.add("inactive");
-
-                contenedorCuentas.classList.remove("inactive");
                 introDelMain.style.color = "#fff"
-                cardconteinerlog.classList.remove("inactive");
 
                 contenedorPaginas.classList.add("inactive");
                 paginasContainerLog.classList.add("inactive");
-                enlacePaginas.textContent = "Conocer Mas"
+
+                menuresponsive.classList.add("inactive");
+
+                contenedorCuentas.classList.remove("inactive");
+                cardconteinerlog.classList.remove("inactive");
+
+                
+                
 
 
                 if(enlaceCards.textContent == "Ver Catálogo Completo"){
@@ -63,55 +66,58 @@ function main(){
 
 
                 else{
+                    textosPaginas.forEach(a => {a.style.color = "#000"});
+                    h2paginas.forEach(a => {a.classList.remove("degradadoPaginas")});
+                    textosPaginas[0].style.margin = "2rem 0 0 0";
                     enlaceCards.textContent = "Ver Catálogo Completo"
                     padre.style.backgroundColor = "#fff";
-
                     introDelMain.style.color = "var(--color1)";
-                    
-                    cardconteinerlog.classList.add("inactive");
 
+                    enlacePaginas.textContent = "Conocer Más"
+                    cardconteinerlog.classList.add("inactive");
                     contenedorPaginas.classList.remove("inactive");};
                     
 
 
             }else if(e.target.className == "enlacePaginas" || e.target.className == "enlacePaginasH" ){
+
+                textosPaginas.forEach(a => {a.style.color = "#fff"});
+                h2paginas.forEach(a => {a.classList.add("degradadoPaginas")});
+                textosPaginas[0].style.margin = "10rem 0 0 0";
+                padre.style.backgroundColor = "#000"
+
+                contenedorCuentas.classList.add("inactive");
+                cardconteinerlog.classList.add("inactive")
                 
                 menuresponsive.classList.add("inactive");
 
                 
                 contenedorPaginas.classList.remove("inactive");
-
-                textosPaginas.forEach(a => {a.style.color = "#fff"});
-                h2paginas.forEach(a => {a.classList.add("degradadoPaginas")});
-
-                textosPaginas[0].style.margin = "10rem 0 0 0";
-                
-
-                contenedorPaginas.style.backgroundColor = "#000";
-
                 paginasContainerLog.classList.remove("inactive");
 
-                contenedorCuentas.classList.add("inactive");
-                
-
-                
                 
 
                 if(enlacePaginas.textContent == "Conocer Más"){
                     enlacePaginas.textContent = "Ver Menos"
                     
                 }else{
-                    enlacePaginas.textContent = "Conocer Mas"
-
-                    textosPaginas[0].style.margin = "2rem 0 0 0";
-
-                    paginasContainerLog.classList.add("inactive");
-
-                    contenedorCuentas.classList.remove("inactive");
-                    contenedorPaginas.style.backgroundColor = "#fff";
-
+                    introDelMain.style.color = "var(--color1)";
+                    padre.style.backgroundColor = "#fff";
                     textosPaginas.forEach(a => {a.style.color = "#000"});
                     h2paginas.forEach(a => {a.classList.remove("degradadoPaginas")});
+                    textosPaginas[0].style.margin = "2rem 0 0 0";
+
+                    enlaceCards.textContent = "Ver Catálogo Completo"
+                    contenedorCuentas.classList.remove("inactive");
+
+
+                    enlacePaginas.textContent = "Conocer Más"
+                    paginasContainerLog.classList.add("inactive");
+
+                   
+          
+
+                    
 
                     
 

@@ -175,7 +175,7 @@ position: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   text-align: center;
   background: black;
   color: var(--color4);
@@ -187,7 +187,7 @@ position: fixed;
   padding-top: 1.5rem;
 }
 .metodosDepago p{
-  padding: 0rem 2rem;
+  padding: .5rem 2rem;
 }
 .metodosDepago div{
   width: 100%;
@@ -197,8 +197,8 @@ position: fixed;
 
 }
 .metodosDepago div img{
-  width: 17rem;
-  height: 10rem;
+  width: 12rem;
+  height: 8rem;
   margin: 1rem 2rem;
 }
 .metodosDepago div img:nth-child(1){
@@ -231,7 +231,7 @@ position: fixed;
 }
 
 .footer div a img{
-  width: 5rem;
+  width: 4rem;
   overflow: hidden;
   border-radius: 110px;
   

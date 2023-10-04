@@ -23,10 +23,15 @@
   .paginasContainer > .textos:nth-child(1){
     margin-top: 2rem;
   }
+
+  
   .textos > h2{
-    font-size: 4rem;
+    font-size: 3rem;
     
    
+  }
+  .textos > p{
+    font-size: 2.4rem;
   }
 
   .degradadoPaginas{
@@ -37,9 +42,12 @@
   }
 
   .imgP1, .imgP2, .imgP3, .imgP4{
-    width: 60%;
+    width: 40%;
     opacity: 0;
     margin-top: 1rem;
+  }
+  .paginasContainerLog > .textos:nth-child(3) > img{
+    width: 35%;
   }
 
   .enlacePaginasLog {
@@ -68,14 +76,18 @@
   
 
   .enlacePaginas{
-    width: 20rem;
-    height: 4rem;
-    background: #000;
+   
+
+    background: black;
+    padding: 10px 0px;
     color: var(--color4);
-    border-radius: 20px;
-    padding-top: 4px;
+    width: 25rem;
+    font-size: 3rem;
     text-align: center;
-    border: 1px solid white;
+    border-radius: 20px;
+    margin: 4rem 0;
+    margin-bottom: 0rem;
+    outline: solid 2px white;
 
   }
 
