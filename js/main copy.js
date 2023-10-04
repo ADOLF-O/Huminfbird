@@ -80,8 +80,12 @@ function main(){
 
                 
                 contenedorPaginas.classList.remove("inactive");
+
                 textosPaginas.forEach(a => {a.style.color = "#fff"});
                 h2paginas.forEach(a => {a.classList.add("degradadoPaginas")});
+
+                textosPaginas[0].style.margin = "10rem 0 0 0";
+                
 
                 contenedorPaginas.style.backgroundColor = "#000";
 
@@ -90,11 +94,16 @@ function main(){
                 contenedorCuentas.classList.add("inactive");
                 
 
-                if(enlacePaginas.textContent == "Conocer Mas"){
+                
+                
+
+                if(enlacePaginas.textContent == "Conocer Más"){
                     enlacePaginas.textContent = "Ver Menos"
                     
                 }else{
                     enlacePaginas.textContent = "Conocer Mas"
+
+                    textosPaginas[0].style.margin = "2rem 0 0 0";
 
                     paginasContainerLog.classList.add("inactive");
 
