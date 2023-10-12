@@ -26,8 +26,7 @@ function main(){
 
     // -----dinamismo---
 
-    // menuham.addEventListener("click", menuhamtoggle);
-    // enlaceCards.addEventListener("click", menuCuentasLog)
+   
     padre.addEventListener("click",eventos);
 
 
@@ -114,22 +113,15 @@ function main(){
                     enlacePaginas.textContent = "Conocer Más"
                     paginasContainerLog.classList.add("inactive");
 
-                   
-          
-
-                    
-
-                    
-
-
                 };
 
                 
             }else if(e.target.className == "Contactos" ){
                 menuresponsive.classList.add("inactive");
 
-            }
-            // if anidado 
+
+            };// if anidado 
+
 }// if principal
         
         else if(e.target.className == "menuham inactive"){
