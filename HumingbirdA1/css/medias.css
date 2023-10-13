@@ -1,0 +1,390 @@
+@media screen and (max-width: 1125px){
+  /* -sección de cuentas- */
+  .poster{
+    width: 80rem;
+    height: 50rem;
+  }
+
+ }
+
+
+@media screen and (max-width: 970px){
+
+    /* --------main------- */
+    .headerDelMain > div{
+     font-size: 2.8rem;
+    }
+   }
+   
+   @media screen and (min-width: 831px){
+     .menuresponsive{
+       display: none;
+     }
+   }
+   
+   @media screen and (max-width: 830px){
+   
+     /* HEADER */
+     .logo{
+       margin: 0 auto;
+     }
+   
+     .sectionRight > a{
+       display: none;
+     }
+   
+     /* header del main */
+     .headerDelMain > div{
+       font-size: 1.8rem;
+     }
+   
+   
+     /* ---header responsive-- */
+   
+     .menuham{
+       display: inline-block !important;
+       border-radius: 50rem;
+       width: 5rem;
+     }
+     .menuresponsive{
+      z-index: 300;
+      }
+    
+   
+   
+     /* ----main seccion de cuentas-- */
+     .intro h2{
+      font-size: 1.8rem;
+    }
+    .intro p{
+      font-size: 1.4rem;
+    }
+
+    .poster{
+      width: 52rem;
+      height: 32rem;
+    }
+    .cards div h3{
+      font-size: 2rem;
+    }
+     .cards div a{
+      height: 4.5rem;
+     }
+     .cards div a p{
+      font-size: 1.5rem;
+     }
+
+     .cards div img{
+       width: 23rem;
+       height: 21rem;
+     }
+   
+     .enlaceCards{
+       width: 18rem;
+       font-size: 1.5rem;
+       margin-top: 4rem;
+       margin-bottom: 6.5rem;
+     }
+     
+   
+   
+   
+   
+     /* ---seccion de paginas--- */
+     .paginasContainer, .paginasContainerLog{
+      padding-bottom: 7rem;
+    }
+
+     .textos{
+      font-size: 2.2rem;
+     }
+
+     .textos h2{
+      font-size: 2.5rem;
+     }
+
+     .imgP1, .imgP2, .imgP3{
+      width: 75%;
+    }
+    .paginasContainerLog > .textos:nth-child(3) > img{
+      width: 65%;
+    }
+
+     .enlacePaginas{
+      font-size: 1.5rem;
+      width: 12rem ;
+      padding-top: .5rem;
+      height: 3rem;
+
+     }
+     
+   
+     /* -------sección de pagos----- */
+  .metodosDepago{
+  font-size: 1.8rem;
+}
+.metodosDepago h2,p{
+  padding: 1rem 1.8rem;
+}
+
+.metodosDepago div img{
+  width: 10rem;
+  height: 7rem;
+  margin: 1rem 2rem;
+}
+.metodosDepago div img:nth-child(1){
+  height: 9rem;
+  margin: 0rem 0rem;
+
+}
+   }
+
+   
+   @media screen and (max-width: 530px){
+    /* ---------Css header----- */
+
+    .header{
+     height: 50px;
+    }
+    .sectionRight .logo{
+      width: 110px;
+      height: 40px;
+      margin-top: 1rem;
+    }
+
+    
+
+     /* ----main seccion de cuentas-- */
+
+    
+     .poster{
+      width: 40rem;
+      height: 20rem;
+      margin: 1rem 0;
+    }
+
+     .cards div img{
+      width: 20rem;
+      height: 18rem;
+    }
+    .cards div h3{
+      font-size: 2rem;
+    }
+
+    .enlaceCards{
+      width: 18rem;
+    }
+
+    .info{
+      padding-top: 2rem;
+    
+    }
+    .info__span{
+      font-size: 4rem;
+    }
+    .info__p{
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+
+    /* seccion de páginas */
+
+
+
+    .paginasContainer{
+      margin-top: 0rem;
+      padding-bottom: 3rem;
+    }
+    .textos{
+      font-size: 1.5rem;
+     }
+
+     .textos h2{
+      font-size: 3rem;
+     }
+
+     .imgP1, .imgP2, .imgP3{
+      width: 80%;
+   
+ 
+    }
+    .enlacePaginasLog{
+      width: 11rem;
+      height: 2rem;
+      font-size: 1.8rem;
+    }
+    .enlacePaginasLog img{
+      width: 15%;
+      height: 80%;
+      margin-right: .3rem;
+      
+    }
+
+     .enlacePaginas{
+      font-size: 1.3rem;
+      width: 9.5rem ;
+      padding: .6rem .3rem;
+      height: 3rem;
+      
+     }
+
+
+ /* -------sección de pagos----- */
+  .metodosDepago{
+    font-size: .8rem;
+  }
+  .metodosDepago h2,p{
+    padding: 1rem;
+  }
+  
+  .metodosDepago div img{
+    width: 5rem;
+    height: 3rem;
+    margin: .5rem ;
+  }
+  .metodosDepago div img:nth-child(1){
+    height: 4rem;
+    margin: 0rem -1rem;
+  
+  }
+  /* -------footer -------- */
+
+.footer{
+  font-size: 1.3rem;
+}
+
+
+.footer div a{
+  margin: 1rem 3%;
+
+}
+
+.footer div a img{
+  width: 3rem;
+}
+   }
+   
+   @media screen and (max-width: 480px){
+    /* menu responsive */
+    .menuham{
+    
+      left: 1.2rem;
+      bottom: 1.2rem;
+      width: 4rem;
+      box-shadow: 0 5px 10px 2px black;
+    
+      
+    }
+    .enlaceCards{
+      margin-bottom: 4.1rem;
+    }
+     /* header del main */
+     .headerDelMain > div{
+       font-size: 1rem;
+     }
+   
+     .headerDelMain > div a{
+       width: 15rem;
+     }
+     
+     /* ----main seccion de cuentas-- */
+     .main .intro h2,p{
+      font-size: 1.4rem;
+     }
+     .main .intro p{
+      font-size: 1.3rem;
+      font-weight: 500;
+     
+      
+     }
+     .poster{
+      width: 20rem;
+      height: 10rem;
+      border-radius: 1rem;
+      margin: 1rem 0;
+    }
+    .cards div{
+      margin-top: 0rem;
+      border-radius: 1rem;
+    }
+     .cards div img{
+       width: 11rem;
+       height: 11rem;
+       padding: 1rem 1rem;
+     }
+   
+     .cards div h3{
+       font-size: 1rem;
+     }
+   
+     .cards div a{
+       width: 100%;
+       height: 2.5rem;
+       font-size: 1.5rem;
+       
+     }
+   
+     .cards div a p{
+        font-size: .9rem;
+        padding: .3rem 0;
+     }
+     .cards div a img{
+      padding: 0;
+      height: 2rem;
+      width: 2rem;
+    
+   }
+   
+     .enlaceCards{
+       width: 16rem;
+       font-size: 1.3rem;
+       margin-bottom: 3.5rem;
+     }
+     
+   
+     /* seccion de páginas */
+
+     .textos h2{
+      font-size: 1.5rem;
+     }
+     .textos p{
+      font-size: 1.2rem;
+
+     }
+
+     .imgP1, .imgP2, .imgP3{
+      width: 70%;
+      
+     
+    }
+
+    .enlacePaginasLog {
+      width: 8rem;
+      height: 1.7rem;
+      margin-top: 3rem;
+      font-size: 1.5rem;      
+  
+    }
+    .enlacePaginasLog img{
+      width: 15%;
+      height: 70%;
+      margin-right: .3rem;
+      
+    }
+
+     .enlacePaginas{
+      font-size: 1.4rem;
+      width: 10rem ;
+      padding-top:  .4rem;
+      height: 2.5rem;
+     }
+   
+    /* -------footer----- */
+    .footer p{
+      font-size: 1.2rem;
+    }
+    
+   
+   }
+   

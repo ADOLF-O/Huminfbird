@@ -1,0 +1,241 @@
+:root{
+  --color1: #000;
+  --color2: #393E46;
+  --color3: #00ADB5;
+  --color4: #EEEEEE;
+  --color5: #a800ae;
+  --negro: #000;
+  --font2:'Rubik', sans-serif;
+  --font: "Rubik";
+
+}
+
+
+.inactive{
+  display: none !important;
+}
+
+.menuWhats{
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  background: var(--color4);
+  box-shadow: 0 5px 10px 2px black;
+  z-index: 400;
+  
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    /* outline: solid red 2px; */
+   
+
+
+}
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  
+  font-family: var(--font);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  grid-template-rows: repeat(3,auto);
+  grid-template-areas:"main   main"
+                      "main main"
+                      "footer footer";
+}
+
+
+/* ---------Css header----- */
+
+.header{
+  display: flex;
+  background: var(--color4);
+  height: 80px;
+  position: fixed;
+  z-index: 222;
+  width: 100%;
+
+}
+
+.header section{
+  background: var(--color1);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+
+}
+
+.sectionRight .logo{
+  width: 130px;
+  height: 55px;
+  margin-bottom: 1rem;
+}
+
+.header section a{
+  font-size: 1.8rem;
+  color: var(--color4);
+  margin-top: .7rem;
+
+}
+.header section a:hover{
+  color: var(--color3);
+  transform: scale(.9);
+}
+
+/* -----menu responsive--- */
+.menuham{
+  position: fixed;
+  left: 2rem;
+  bottom: 2rem;
+  background: var(--color4);
+  box-shadow: 0 5px 10px 2px black;
+  z-index: 400;
+  
+}
+
+
+
+.menuresponsive{
+backdrop-filter: blur(5px);
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+position: fixed;
+
+}
+.menuresponsive div{
+  background-color: var(--color4);
+  display:flex ;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 4rem;
+  width: 18rem;
+  padding: 2rem 0;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 12px var(--color1);
+
+}
+
+.menuresponsive div a{
+  color: #000;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+/* -----Css Main---- ------------------*/
+
+.main{
+  grid-area: main;
+  margin-top: 5rem;
+}
+
+.info{
+  font-family: var(--font2);
+  padding-top: 2rem;
+  background: var(--color4);
+  width: 95%;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  
+  
+}
+.info__span{
+  font-size: 8rem;
+}
+.info__p{
+  font-size: 4rem;
+  text-align: center;
+}
+
+/* -------sección de pagos----- */
+.metodosDepago{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
+  text-align: center;
+  background: black;
+  color: var(--color4);
+  overflow: hidden;
+  
+}
+.metodosDepago h2{
+  padding: .3rem 2rem;
+  padding-top: 1.5rem;
+}
+.metodosDepago p{
+  padding: .5rem 2rem;
+}
+.metodosDepago div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+
+}
+.metodosDepago div img{
+  width: 12rem;
+  height: 8rem;
+  margin: 1rem 2rem;
+}
+.metodosDepago div img:nth-child(1){
+  height: 11rem  0;
+  margin: 1rem -1rem;
+ 
+
+}
+/* -------footer -------- */
+
+.footer{
+  grid-area: footer;
+  background: var(--color1);
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  color: var(--color4);
+  font-size: 1.5rem;
+ 
+}
+
+.footer div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer div a{
+  margin: 1rem 5%;
+
+}
+
+.footer div a img{
+  width: 4rem;
+  overflow: hidden;
+  border-radius: 110px;
+  
+}
+
+
+

@@ -1,0 +1,108 @@
+/* ----section de páginas--------------------------------------------*/
+
+.paginasContainer, .paginasContainerLog{
+    font-size: 2.5rem;
+    width: 100%;
+    font-family: var(--font2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem ;
+    overflow: hidden;
+
+  }
+
+  .textos{
+    width: 100%;
+    text-align: center;
+    color: var(--color1);
+    margin: 50rem 0 1rem 0;
+    padding: 0 1.5rem;
+
+  }
+  .paginasContainer > .textos:nth-child(1){
+    margin-top: 2rem;
+  }
+
+  
+  .textos > h2{
+    font-size: 3rem;
+    
+   
+  }
+  .textos > p{
+    font-size: 2.4rem;
+  }
+
+  .degradadoPaginas{
+    background: linear-gradient(90deg, #efafff 24%,#abffff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+  }
+
+  .imgP1, .imgP2, .imgP3, .imgP4{
+    width: 40%;
+    opacity: 0;
+    margin-top: 1rem;
+  }
+  .paginasContainerLog > .textos:nth-child(3) > img{
+    width: 35%;
+  }
+
+  .enlacePaginasLog {
+    width: 20rem;
+    height: 4rem;
+    background: rgb(33, 255, 44);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #000;
+    margin-top: 4rem;
+    font-size: 100%;
+    
+    
+
+  }
+  .enlacePaginasLog img{
+    width: 15%;
+    height: 70%;
+    margin-right: 1rem;
+    
+  }
+  
+
+  .enlacePaginas{
+   
+
+    background: black;
+    padding: 10px 0px;
+    color: var(--color4);
+    width: 25rem;
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 20px;
+    margin: 4rem 0;
+    margin-bottom: 0rem;
+    outline: solid 2px white;
+
+  }
+
+  .colorTextosPagina{
+    color: #fff;
+  }
+
+
+ 
+
+
+   
+
+
+
+
+  
+  

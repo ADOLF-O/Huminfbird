@@ -1,0 +1,126 @@
+.log{
+  animation: log 1s ease-in-out;
+  opacity: 1;
+
+}
+.deslog{
+  animation: deslog .7s ease-out;
+  opacity: 0;
+}
+.Aentrada{
+    animation: carga 1s ;
+  }
+  
+.ahumento{
+    animation: ahumento 1s ;
+}
+.scroll1{
+    animation: scroll1 1.2s ease-in-out ;
+    opacity: 1;
+}
+
+.scroll2{
+  animation: scroll2 1.2s ease-in-out ;
+  opacity: 1;
+}
+.sliderP{
+  animation: sliderP 2.5s ease-in-out;
+}
+
+.metodosDepago .pagos{
+  animation: pagos 3s ease-in-out;
+  opacity: 1;
+}
+  /* --animacion del menu responsive-- */
+
+@keyframes log{
+  
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+    
+  }
+
+  @keyframes deslog{
+  
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+    
+  }
+  
+
+  /* animaciones generales */
+  @keyframes carga {
+    0%{
+      transform: scale(.0);
+    }
+    100%{
+      transform: scale(1);
+    }
+    
+    
+  }
+  
+  @keyframes ahumento {
+    0%{
+      transform: scale(0);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+
+  @keyframes scroll1 {
+    0%{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+  }
+  @keyframes scroll2 {
+    0%{
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+  }
+
+  @keyframes introlog {
+    0%{
+        display: block;
+        opacity: 1;
+        
+    }
+    100%{
+        opacity: 0;
+        display: none;
+        
+    }
+    
+  }
+
+  @keyframes pagos {
+    0%{
+      transform: scale(.9);
+      opacity: 0;
+    }    
+    100%{
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
