@@ -26,7 +26,8 @@
    
      /* HEADER */
      .logo{
-       margin: 0 auto;
+      height: 500px;
+      margin: 0 auto;
      }
    
      .sectionRight > a{
@@ -34,9 +35,34 @@
      }
    
      /* header del main */
-     .headerDelMain > div{
-       font-size: 1.8rem;
+     .slider-container {
+      margin-top: 1rem;
+      width: 100%;
+    }
+     .headerDelMain{
+      margin-top: 0rem;
      }
+     .headerDelMain img{
+      width: 50rem;
+      height: 35rem;
+      
+     }
+
+     .headerDelMain > div{
+      width: 47rem;
+      height: 28rem;
+      left: 0rem;
+      bottom: 1.4rem;
+
+     }
+     
+     .main .intro{
+
+      line-height: 2rem;
+  
+      }
+
+     
    
    
      /* ---header responsive-- */
@@ -56,7 +82,7 @@
      .intro h2{
       font-size: 1.8rem;
     }
-    .intro p{
+      .intro p{
       font-size: 1.4rem;
     }
 
@@ -146,12 +172,40 @@
     .header{
      height: 50px;
     }
+
     .sectionRight .logo{
       width: 110px;
       height: 40px;
       margin-top: 1rem;
     }
+    /* ------header del main----- */
 
+    .headerDelMain{
+     height: 22rem;
+     
+     }
+     .headerDelMain img{
+      width: 25rem;
+      height: 19rem;
+      
+     }
+
+     .headerDelMain > div{
+      width: 23.5rem;
+      height: 15rem;
+      bottom: .7rem;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+
+     }
+     
+     .main .intro{
+
+      line-height: 1.8rem;
+  
+      }
+
+
+    
     
 
      /* ----main seccion de cuentas-- */
@@ -360,12 +414,11 @@
     }
 
     .enlacePaginasLog {
-      width: 8rem;
-      height: 1.7rem;
-      margin-top: 3rem;
-      font-size: 1.5rem;      
-  
-    }
+      width: 11rem;
+      height: 2.7rem;
+      margin-top: 2rem;
+      font-size: 1.5rem;
+  }
     .enlacePaginasLog img{
       width: 15%;
       height: 70%;

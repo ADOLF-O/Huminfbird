@@ -10,7 +10,7 @@ function main(){
 
     const spanC = document.querySelector(".info__span");
   
-    let contadorC = 950;
+    let contadorC = 990;
 
 
     
@@ -34,17 +34,17 @@ function main(){
                     element.target.classList.add("scroll2");
                 }else if(element.target.className == "info__span"){
 
-                        if(contadorC === 950){
+                        if(contadorC === 990){
 
                             let intervalo = setInterval(() =>{
                                 contadorC++;
                                 spanC.textContent = "+" + contadorC ;
-                                if(contadorC == 1000){
+                                if(contadorC == 1050){
                                     clearInterval(intervalo);
                                     
                                         
                                 }
-                            }, 30)};
+                            }, 20)};
                         }else if(element.target.id == "pagos"){
                             pagos.classList.add("pagos")
 

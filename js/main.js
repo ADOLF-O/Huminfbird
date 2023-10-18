@@ -45,77 +45,10 @@ function main(){
         if(e.target.nodeName == "A"){
             if(e.target.className == "enlaceCards" || e.target.className ==  "enlaceCardsH"){
 
-                padre.style.backgroundColor = "#000"
-                introDelMain.style.color = "#fff"
 
-                contenedorPaginas.classList.add("inactive");
-                paginasContainerLog.classList.add("inactive");
-
-                menuresponsive.classList.add("inactive");
-
-                contenedorCuentas.classList.remove("inactive");
-                cardconteinerlog.classList.remove("inactive");
-
-                
-                
-
-
-                if(enlaceCards.textContent == "Ver Catálogo Completo"){
-                    enlaceCards.textContent = "Guardar Catálogo";}
-
-
-                else{
-                    textosPaginas.forEach(a => {a.style.color = "#000"});
-                    h2paginas.forEach(a => {a.classList.remove("degradadoPaginas")});
-                    textosPaginas[0].style.margin = "2rem 0 0 0";
-                    enlaceCards.textContent = "Ver Catálogo Completo"
-                    padre.style.backgroundColor = "#fff";
-                    introDelMain.style.color = "var(--color1)";
-
-                    enlacePaginas.textContent = "Conocer Más"
-                    cardconteinerlog.classList.add("inactive");
-                    contenedorPaginas.classList.remove("inactive");};
                     
 
 
-            }else if(e.target.className == "enlacePaginas" || e.target.className == "enlacePaginasH" ){
-
-                textosPaginas.forEach(a => {a.style.color = "#fff"});
-                h2paginas.forEach(a => {a.classList.add("degradadoPaginas")});
-                textosPaginas[0].style.margin = "10rem 0 0 0";
-                padre.style.backgroundColor = "#000"
-
-                contenedorCuentas.classList.add("inactive");
-                cardconteinerlog.classList.add("inactive")
-                
-                menuresponsive.classList.add("inactive");
-
-                
-                contenedorPaginas.classList.remove("inactive");
-                paginasContainerLog.classList.remove("inactive");
-
-                
-
-                if(enlacePaginas.textContent == "Conocer Más"){
-                    enlacePaginas.textContent = "Ver Menos"
-                    
-                }else{
-                    introDelMain.style.color = "var(--color1)";
-                    padre.style.backgroundColor = "#fff";
-                    textosPaginas.forEach(a => {a.style.color = "#000"});
-                    h2paginas.forEach(a => {a.classList.remove("degradadoPaginas")});
-                    textosPaginas[0].style.margin = "2rem 0 0 0";
-
-                    enlaceCards.textContent = "Ver Catálogo Completo"
-                    contenedorCuentas.classList.remove("inactive");
-
-
-                    enlacePaginas.textContent = "Conocer Más"
-                    paginasContainerLog.classList.add("inactive");
-
-                };
-
-                
             }else if(e.target.className == "Contactos" ){
                 menuresponsive.classList.add("inactive");
 
@@ -153,40 +86,3 @@ function main(){
 
 
 
-
-
-
-
-
-
-
-
-
-// const imagen1 = document.getElementById("imagen1");
-// const imagen2 = document.getElementById("imagen2");
-
-// const cargarImg = (entra, mirador) =>  {
-//   entra.forEach((propiedades) => {
-
-//      if(propiedades.isIntersecting){
-//          propiedades.target.classList.add("animacion");
-        
-//       }
-//      //  else{
-//      //    propiedades.target.classList.remove("animacion");
-
-//      //  };
-
-    
-
-//   });
-// };
-
-// const observador = new IntersectionObserver(cargarImg, {
-//    root: null, 
-//    rootMargin: "0px",
-//    threshold: 1.0
-// });
-
-// observador.observe(imagen1);
-// observador.observe(imagen2);
