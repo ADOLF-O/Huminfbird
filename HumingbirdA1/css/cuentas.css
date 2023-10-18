@@ -1,161 +1,208 @@
 
 
-.headerDelMain{
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .headerDelMain video{
-    width: 100%;
-  
-  }
-  .headerDelMain > div{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    color: var(--color4);
-    font-size: 4rem;
-    text-align: center;
-  }
-  
-  .headerDelMain > div > a{
-    border-radius: 0px 0px 40px 40px;
-    padding: 0 10px;
-    color: var(--color4);
-    margin-top: 10px;
-    z-index: 100;
-    width: 48rem;
-    background: var(--color1);
-  
-  }
-  
-  .headerDelMain > div > a:hover{
-    transform: scale(.9);
-  
-  }
-  
-  .main .intro{
-    margin: 20px 0;
-    text-align: center;
-    font-size: 1.6rem;
-    color: var(--color1);
-    padding: 0 1rem;
-
-  
-  }
-  
-  /* ----main seccion de cuentas-- */
-  
-  .cardconteiner, .cardconteinerlog{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-
-  }
-
-
-  
-  .cards{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1.5rem 0;
-    
-    
-  }
-  .poster{
-    width: 80rem;
-    margin: 5rem 0;
-    height: 40rem;
-    border-radius: 5rem;
-  }
-
-  .cards > div{
-   text-align: center;
-   font-size: 3rem;
-   font-family: var(--font2);
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   background: var(--color2);
-   border-radius: 30px;
-   /* box-shadow: 0 0 20px 3px var(--color4); */
-   overflow: hidden;
-   color: var(--color1);
-   margin-top: 2rem;
-   outline: solid white 2px;
-  
-  }
-  
-  .cards > div > img{
-    width: 30rem;
-    height: 27rem;
-  
-    padding: 4rem 2rem;
-  }
-  
-  .cards div > a {
-    
-    display: flex;
-    width: 100%;
-    height: 7rem;
-    /* outline: solid red 2px; */
-    color: var(--color4);
-    overflow: hidden;
-    background: var(--color4);
-    align-items: center;
-    position: relative;
-    justify-content: center;
-  }
-  
-  .cards div h3{
-    font-size: 3rem;
-    color: var(--color4);
-    width: 100%;
-    text-align: start;
-    padding: 1rem;
-  }
-   .cards div > a > img{
-  
-    left: 28%;
-    width: 11%;
-    height: 55%;
-  }
-  .cards div > a > p{
-    margin-left: .5rem;
-    width: auto;
-    height: 55%;
-    color: var(--color1);
-    font-weight:900;
-  }
-  
-  .enlaceCards  {
-    background: black;
-    padding: 10px 0px;
-    color: var(--color4);
-    width: 35rem;
-    font-size: 3rem;
-    text-align: center;
-    border-radius: 20px;
-    margin: 4rem 0;
-    outline: solid 2px white;
+.slider-container {
+  margin-top: 2rem;
+  overflow: hidden;
+  width: 65%;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 5.1rem;
+  border-radius: 1rem;
 
  
-  }
-  .cards div > img{
-    background: #000;
-  }
-  .cards div > .wwe{
-    background: #fff;;
-  }
-  .cards div > .youtube{
-    background: #fff;
-  }
-  .cards div > .Apple{
-    background: #fff;
-  }
+}
+
+.slider {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300%; /* Ancho total del slider, 100% por imagen */
+  transition: transform 0.5s; /* Añade una transición para el deslizamiento */
+}
+
+.slider li {
+  float: left;
+  width: 33.33%; /* Ancho de cada imagen, 100% / número de imágenes */
+}
+
+.slider li img {
+  float: left;
+  width: 100%; /* Ancho de cada imagen, 100% / número de imágenes */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.headerDelMain{
+  width: 100%;
+  height: 50rem;
+  position: relative;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.headerDelMain img{
+  position: absolute;
+  width: 70rem;
+  height: 40rem;
+}
+
+.headerDelMain > div{
+  width: 67rem;
+  height: 32.7rem;
+  position: relative;
+  left: .2rem;
+  bottom: 1.7rem;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.4);
+}
+
+.headerDelMain video{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+ 
+
+}
+
+
+
+
+
+
+.main .intro{
+  margin: 20px 0;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--color4);
+  margin-top: 5rem;
+  line-height: 4rem;
+  padding: 0 1rem;
+
+
+}
+
+.main .intro h2{
+ margin-bottom: 2rem;
+}
+
+/* ----main seccion de cuentas-- */
+
+.cardconteiner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+}
+
+
+
+.cards{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem 0;
+  opacity: 0;
+  
+  
+}
+.poster{
+  width: 80rem;
+  margin: 5rem 0;
+  height: 40rem;
+  border-radius: 5rem;
+  opacity: 0;
+}
+
+.cards > div{
+ text-align: center;
+ font-size: 3rem;
+ font-family: var(--font2);
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background: var(--color2);
+ border-radius: 30px;
+ overflow: hidden;
+ color: var(--color1);
+ margin-top: 2rem;
+ outline: solid white 2px;
+
+}
+
+.cards > div > img{
+  width: 30rem;
+  height: 27rem;
+
+  padding: 4rem 2rem;
+}
+
+.cards div > a {
+  
+  display: flex;
+  width: 100%;
+  height: 7rem;
+  color: var(--color4);
+  overflow: hidden;
+  background: var(--color4);
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+
+.cards div h3{
+  font-size: 3rem;
+  color: var(--color4);
+  width: 100%;
+  text-align: start;
+  padding: 1rem;
+}
+ .cards div > a > img{
+
+  left: 28%;
+  width: 11%;
+  height: 55%;
+}
+.cards div > a > p{
+  margin-left: .5rem;
+  width: auto;
+  height: 55%;
+  color: var(--color1);
+  font-weight:900;
+}
+
+.enlaceCards  {
+  background: black;
+  padding: 10px 0px;
+  color: var(--color4);
+  width: 35rem;
+  font-size: 3rem;
+  text-align: center;
+  border-radius: 20px;
+  margin: 4rem 0;
+  outline: solid 2px white;
+
+
+}
+
+.cards div > img{
+  background: #000;
+}
+.cards div > .wwe{
+  background: #fff;;
+}
+.cards div > .youtube{
+  background: #fff;
+}

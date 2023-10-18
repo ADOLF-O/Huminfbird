@@ -1,7 +1,7 @@
 /* ----section de páginas--------------------------------------------*/
 
-.paginasContainer, .paginasContainerLog{
-    font-size: 2.5rem;
+.paginasContainer{
+    margin-top: 40rem;
     width: 100%;
     font-family: var(--font2);
     display: flex;
@@ -15,39 +15,43 @@
   .textos{
     width: 100%;
     text-align: center;
-    color: var(--color1);
-    margin: 50rem 0 1rem 0;
-    padding: 0 1.5rem;
-
+    margin-top: 30rem;
   }
-  .paginasContainer > .textos:nth-child(1){
-    margin-top: 2rem;
+
+  .textos:nth-child(1){
+    margin-top: 5rem;
   }
 
   
-  .textos > h2{
-    font-size: 3rem;
-    
-   
-  }
-  .textos > p{
-    font-size: 2.4rem;
-  }
 
-  .degradadoPaginas{
+  
+  .textos > h2{
+    font-size: 5rem;
+  }
+  .h2-paginas{
     background: linear-gradient(90deg, #efafff 24%,#abffff);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-
   }
+  .textos > p{
+    font-size: 3.4rem;
+    color: var(--color4);
+  }
+
+
 
   .imgP1, .imgP2, .imgP3, .imgP4{
     width: 40%;
     opacity: 0;
     margin-top: 1rem;
   }
+
+  .imgP4{
+    width: 60%;
+  }
   .paginasContainerLog > .textos:nth-child(3) > img{
-    width: 35%;
+    width: 34%;
+    
   }
 
   .enlacePaginasLog {
@@ -91,9 +95,7 @@
 
   }
 
-  .colorTextosPagina{
-    color: #fff;
-  }
+  
 
 
  
