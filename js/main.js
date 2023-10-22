@@ -6,18 +6,11 @@ function main(){
     // ---seleccionar elementos-----
   
     const menuresponsive = document.querySelector(".menuresponsive");
-    const enlaceCards = document.querySelector(".enlaceCards");
+    
     const padre = document.querySelector(".contenedorBody");
-    const cardconteinerlog = document.querySelector(".cardconteinerlog");
-    const contenedorPaginas = document.querySelector(".paginasContainer");
 
-    const textosPaginas = document.querySelectorAll(".textos");
-    const h2paginas = document.querySelectorAll(".h2-paginas");
   
-    const introDelMain = document.querySelector(".intro");
-    const paginasContainerLog = document.querySelector(".paginasContainerLog");
-    const enlacePaginas = document.querySelector(".enlacePaginas");
-    const contenedorCuentas = document.querySelector(".cuentas");
+
    
 
     
@@ -43,8 +36,10 @@ function main(){
 
     function eventos(e){
         if(e.target.nodeName == "A"){
-            if(e.target.className == "enlaceCards" || e.target.className ==  "enlaceCardsH"){
-
+            if(e.target.className == "ContactosH" || e.target.className ==  "ContactosH"){
+                menuresponsive.classList.remove("log");
+                menuresponsive.classList.add("deslog");
+                setTimeout(animacionSalida, 1000);
 
                     
 
@@ -57,7 +52,7 @@ function main(){
 
 }// if principal
         
-        else if(e.target.className == "menuham inactive"){
+        else if(e.target.className == "menuham inactive"  ){
 
             if(menuresponsive.className == "menuresponsive log"){
                 menuresponsive.classList.remove("log");
