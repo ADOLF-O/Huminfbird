@@ -1,82 +1,143 @@
 window.addEventListener("load", main);
 
 
+
+
+
+
+
+
 function main(){
-
-    // ---seleccionar elementos-----
-  
-    const menuresponsive = document.querySelector(".menuresponsive");
-    const enlaceCards = document.querySelector(".enlaceCards");
-    const padre = document.querySelector(".contenedorBody");
-    const cardconteinerlog = document.querySelector(".cardconteinerlog");
-    const contenedorPaginas = document.querySelector(".paginasContainer");
-
-    const textosPaginas = document.querySelectorAll(".textos");
-    const h2paginas = document.querySelectorAll(".h2-paginas");
-  
-    const introDelMain = document.querySelector(".intro");
-    const paginasContainerLog = document.querySelector(".paginasContainerLog");
-    const enlacePaginas = document.querySelector(".enlacePaginas");
-    const contenedorCuentas = document.querySelector(".cuentas");
-   
-
     
+// --------particulas---------
+    particlesJS("particles-js", {
+        "particles": {
+          "number": {
+            "value": 120, // Número de partículas
+          },
+          "color": {
+            "value": ["#e702b1", "#07b9ff"], // Color de las partículas
+          },
+          "shape": {
+            "type": "circle", // Forma de las partículas (puede ser "circle", "edge", "triangle", etc.)
+          },
+          "size": {
+            "value": .7, // Tamaño de las partículas
+          },
+          "move": {
+            "speed": 2.5, // Mayor velocidad
+            "direction": "none", // Puedes cambiar la dirección
+          },
 
+          "line_linked": {
+            "enable": false, // Desactiva las líneas entre las partículas
+            
+          },
+        },
 
-
-    // -----dinamismo---
-
-   
-    padre.addEventListener("click",eventos);
-
-
-
-    // ---funciones----
-    function animacionSalida(){
-        menuresponsive.classList.add("inactive");
-        menuresponsive.classList.remove("deslog");
-       
-
-    };
-    
-
-
-    function eventos(e){
-        if(e.target.nodeName == "A"){
-            if(e.target.className == "enlaceCards" || e.target.className ==  "enlaceCardsH"){
-
-
-                    
-
-
-            }else if(e.target.className == "Contactos" ){
-                menuresponsive.classList.add("inactive");
-
-
-            };// if anidado 
-
-}// if principal
+        "interactivity": {
+          "events": {
+            "onhover": {
+              "enable": false,
+              "mode": "repulse", // Comportamiento al pasar el mouse sobre las partículas
+            },
+            "onclick": {
+                "enable": false, // Desactiva la reacción al hacer clic en las partículas
+              },
+          },
+        },
         
-        else if(e.target.className == "menuham inactive"){
+      });
 
-            if(menuresponsive.className == "menuresponsive log"){
-                menuresponsive.classList.remove("log");
-                menuresponsive.classList.add("deslog");
 
-                setTimeout(animacionSalida, 1000);
-            }else{
-                menuresponsive.classList.toggle("inactive");
-                menuresponsive.classList.add("log");
 
-            };
+// -----------barras de progreso------------
+var progressBar1 = new ProgressBar.Line('#progress-bar1', {
+  strokeWidth: 4,            // Grosor de la barra de progreso
+  easing: 'easeInOut',       // Tipo de animación
+  duration: 5000,            // Duración de la animación en milisegundos
+  color: '#fff',          // Color de la barra de progreso
+  trailColor: '#000',        // Color de fondo de la barra de progreso
+  trailWidth: 4,             // Grosor del fondo de la barra de progreso
+  svgStyle: { width: '100%', height: '100%' }, // Estilo del contenedor SVG
 
-            
-           
-            
-            
-    } ;
-} ;//función eventos
-};//función main
+});
+
+progressBar1.animate(.95); // Inicia la barra de progreso al 100%
+
+
+let progressBar2 = new ProgressBar.Line('#progress-bar2', {
+  strokeWidth: 4,            // Grosor de la barra de progreso
+  easing: 'easeInOut',       // Tipo de animación
+  duration: 5000,            // Duración de la animación en milisegundos
+  color: '#fff',          // Color de la barra de progreso
+  trailColor: '#000',        // Color de fondo de la barra de progreso
+  trailWidth: 4,             // Grosor del fondo de la barra de progreso
+  svgStyle: { width: '100%', height: '100%' }, // Estilo del contenedor SVG
+
+});
+
+progressBar2.animate(1.0); // Inicia la barra de progreso al 100%
+
+let progressBar3 = new ProgressBar.Line('#progress-bar3', {
+  strokeWidth: 4,            // Grosor de la barra de progreso
+  easing: 'easeInOut',       // Tipo de animación
+  duration: 5000,            // Duración de la animación en milisegundos
+  color: '#fff',          // Color de la barra de progreso
+  trailColor: '#000',       // Color de fondo de la barra de progreso
+  trailWidth: 4,             // Grosor del fondo de la barra de progreso
+  svgStyle: { width: '100%', height: '100%' }, // Estilo del contenedor SVG
+
+});
+
+progressBar3.animate(1.0); // Inicia la barra de progreso al 100%
+
+let progressBar4 = new ProgressBar.Line('#progress-bar4', {
+  strokeWidth: 4,            // Grosor de la barra de progreso
+  easing: 'easeInOut',       // Tipo de animación
+  duration: 5000,            // Duración de la animación en milisegundos
+  color: '#fff',          // Color de la barra de progreso
+  trailColor: '#000',        // Color de fondo de la barra de progreso
+  trailWidth: 4,             // Grosor del fondo de la barra de progreso
+  svgStyle: { width: '100%', height: '100%' }, // Estilo del contenedor SVG
+
+});
+
+progressBar4.animate(.97); // Inicia la barra de progreso al 100%
+
+let progressBar5 = new ProgressBar.Line('#progress-bar5', {
+  strokeWidth: 4,            // Grosor de la barra de progreso
+  easing: 'easeInOut',       // Tipo de animación
+  duration: 5000,            // Duración de la animación en milisegundos
+  color: '#fff',          // Color de la barra de progreso
+  trailColor: '#000',       // Color de fondo de la barra de progreso
+  trailWidth: 4,             // Grosor del fondo de la barra de progreso
+  svgStyle: { width: '100%', height: '100%' }, // Estilo del contenedor SVG
+
+});
+
+progressBar5.animate(.87); // Inicia la barra de progreso al 100%
+
+let progressBar6 = new ProgressBar.Line('#progress-bar6', {
+  strokeWidth: 4,            // Grosor de la barra de progreso
+  easing: 'easeInOut',       // Tipo de animación
+  duration: 5000,            // Duración de la animación en milisegundos
+  color: '#fff',          // Color de la barra de progreso
+  trailColor: '#000',        // Color de fondo de la barra de progreso
+  trailWidth: 4,             // Grosor del fondo de la barra de progreso
+  svgStyle: { width: '100%', height: '100%' }, // Estilo del contenedor SVG
+
+});
+
+progressBar6.animate(.97); // Inicia la barra de progreso al 100%
+
+
+
+};
+
+
+
+
     
 
 
