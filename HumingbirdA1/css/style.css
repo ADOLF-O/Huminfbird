@@ -163,6 +163,13 @@ body{
   margin-left: 1.4rem;
 }
 
+.titulo__sub{
+  font-size: 1.5rem;
+  color: var(--color4);
+  text-align: left;
+  font-weight: 600;
+  margin-top: 3rem;
+}
 .servicios__texto{
   color: var(--color4);
   margin-top: .8rem;
@@ -194,11 +201,14 @@ body{
   
 }
 
-.servicios .servicios__texto:nth-child(5){
+.servicios .titulo__sub:nth-child(6){
+  text-align: right;
+}
+.servicios .servicios__texto:nth-child(7){
   text-align: right;
 }
 
-.servicios .servicios__enlance:nth-child(7){
+.servicios .servicios__enlance:nth-child(9){
   align-self:flex-end;
   box-shadow: 3px 2px 0 1px var(--color4);
 }
