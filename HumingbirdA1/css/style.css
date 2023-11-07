@@ -121,12 +121,12 @@ body{
 
 
 /* ----posicionamineto de objto------ */
-.servicios, .justify, .barras{
+.servicios, .justify, .barras, .intro{
   margin: 0 auto 5rem;
   width: 90%;
   padding-top: 2rem;
   text-align: center;
-  /* outline: solid red 1px; */
+
 
   display: flex;
   flex-direction: column;
@@ -135,7 +135,35 @@ body{
  
 } 
 
-/* ---------sección de serviciosy justify----------- */
+
+/* ------intro--------- */
+.intro{
+  padding: 0;
+}
+.intro__titulo, .intro-titulo__span{
+  font-weight: 600;
+  
+  font-size: 2.2rem;
+  color: var(--color4);
+
+
+}
+.intro__img{
+  width: 75%;
+  margin: 1rem auto;
+  
+}
+
+.intro-titulo__span{
+  background-image: linear-gradient(to right, rgb(234, 0, 255), #00e5ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+/* ---------sección de servicios y justify----------- */
 .servicios__titulo,
 .servicios__tituloF{
   color: var(--color4);
@@ -186,7 +214,7 @@ body{
   margin: 0 auto;
 }
 
-.servicios__enlance{
+.servicios__enlance, .intro__enlace{
   outline: solid 1px  var(--color4);
   box-shadow: -3px 2px 0 1px var(--color4);
   color: var(--color4);
@@ -253,7 +281,7 @@ body{
 #progress-bar1, #progress-bar2, #progress-bar3,
 #progress-bar4,#progress-bar5,#progress-bar6 {
   width: 80%;
-  margin: 3rem 0;
+  margin: 2.5rem 0;
   height: 5px; /* Altura de la barra de rogreso */
   border-radius: 10px; /* Borde redondeado */
 
