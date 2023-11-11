@@ -13,19 +13,19 @@ function main(){
     particlesJS("particles-js", {
         "particles": {
           "number": {
-            "value": 120, // Número de partículas
+            "value": 70, // Número de partículas
           },
           "color": {
             "value": ["#e702b1", "#07b9ff"], // Color de las partículas
           },
           "shape": {
-            "type": "circle", // Forma de las partículas (puede ser "circle", "edge", "triangle", etc.)
+            "type": ["circle","triangle"], // Forma de las partículas (puede ser "circle", "edge", "triangle", etc.)
           },
           "size": {
-            "value": .7, // Tamaño de las partículas
+            "value": 2, // Tamaño de las partículas
           },
           "move": {
-            "speed": 2.5, // Mayor velocidad
+            "speed": 1, // Mayor velocidad
             "direction": "none", // Puedes cambiar la dirección
           },
 
