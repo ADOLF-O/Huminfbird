@@ -16,16 +16,22 @@
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/cuentas.css" />
 		<link rel="stylesheet" href="./css/paginas.css" />
-		<link rel="stylesheet" href="./css/medias.css" />
+		<link rel="stylesheet" href="./css/medias2.css" />
 		<link rel="stylesheet" href="./css/animations.css" />
 		<link rel="icon" href="../humingbird/logo.png" />
 
-		<!-- <script src="./js/main.js"></script>
-		<script src="./js/scroll.js"></script> -->
+		<script src="./node_modules/progressbar.js/dist/progressbar.js"></script>
+		
 
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<script type="module" src="./js/main.js"></script>
+		<script src="./js/scroll.js"></script>
 
-		<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Quicksand:wght@300;500;700&family=Rubik:wght@300&family=Secular+One&family=Teko&display=swap" rel="stylesheet" />
+		
+		<script src="./node_modules/particles.js/particles.js"></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-BDJZ3NWFPZ"></script>
@@ -39,138 +45,135 @@
 	</head>
 
 	<body class="contenedorBody">
+
+
+
+		<div id="particles-js"></div>
 		
 		<header class="header">
+
 			<div class="header__div1">
-				<a href="tel:+123456789">Marcar el número</a>
+
+				<a href="mailto:adolfo@humingbird.shop">
+					<img src="./humingbird/iconos/mail.svg" alt="email">
+					adolfo@humingbird.shop</a>
+
+				<a href="tel:+502 58271288">
+					<img src="./humingbird/iconos/phone.svg" alt="phone">
+					+502 58271288</a>
+
 			</div>
-			<div class="header__div2"></div>
-			<div class="header__div3"></div>
+
+			<div class="header__div2">
+				<img src="./humingbird/logo.png" alt="logo">
+			</div>
+
+			<div class="header__div3">
+				Servicios Profesionales de Desarrollo Web
+			</div>
 			
+			<div class="header__div4">
+				e-commerce | It | Portafolio personal | <br> Página web institucional | Página web de noticias <br> Y mucho mas...
+			</div>
+
 		</header>
 
-		<img class="menuham inactive" src="../humingbird/iconos/menuham.png" alt="" />
+		<main>
 
-		<section class="menuresponsive inactive">
-			<div>
-				<a class="enlacePaginasH" href="./html/paginas.html">
-					Páginas Web
-				</a>
+			<section class="intro">
+				<p class="intro__titulo">Obtén hoy tu página web</p>
+				<p class="intro-titulo__span">profesional</p>
+				<img class="intro__img" src="./humingbird/iconos/gif1.gif" alt="">
+				<a class="intro__enlace" href="https://api.whatsapp.com/send?phone=+50258271288text=Hola, me interesa cotizar mi página web con ustedes" target="_blank">Quieri Mi Página →</a>
 
-				<a target="_blank" class="Apps" href="https://adolf-o.github.io/Corre-Porras-Corre/">
-					Apps
-				</a>
+			</section>
 
-				<a class="ContactosH" href="#Contactos">
-					Contactos
-				</a>
-			</div>
-		</section>
+			
 
-		<main class="main">
+			<section class="servicios">
+				<p class="servicios__titulo">Servicios</p>
+
+				<p class="titulo__sub">Páginas web</p>
+				<p class="servicios__texto">Descubre todo lo que podemos hacer por ti. Desde e-commerce hasta páginas web institucionales, en Humingbird tenemos las soluciones digitales que necesitas para destacar en línea. Elige el camino hacia el éxito en la web con nuestros servicios.</p>
+				<img class="servicios__img" src="./humingbird/pagina/serviciosImg.png" alt="">
+				<a class="servicios__enlance" href="https://api.whatsapp.com/send?phone=+50258271288text=Hola, me interesa cotizar mi página web con ustedes" >Presiona acá para más información</a>
+
+				<p class="titulo__sub">Tiendas en línea</p>
+				<p class="servicios__texto">Somos apasionados del desarrollo web y estamos aquí para hacer que tu presencia en línea sea excepcional. Ofrecemos una gama completa de servicios que abarcan todo, desde la creación de sitios web únicos y atractivos hasta tu propia tienda en línea personalizada</p>
+				<img class="servicios__img" src="./humingbird/pagina/serviciosImg2.png" alt="">
+				<a class="servicios__enlance" href="https://api.whatsapp.com/send?phone=+50258271288text=Hola, me interesa cotizar mi página web con ustedes" >Presiona acá para más información</a>
+
+				<p class="titulo__sub">IT</p>
+				<p class="servicios__texto">Somos tus aliados en el mundo del desarrollo web. Nos ocupamos de todos los detalles técnicos para que tú puedas concentrarte en tu negocio..</p>
+				<img class="servicios__img" src="./humingbird/pagina/serviciosImg3.png" alt="">
+				<a class="servicios__enlance" href="https://api.whatsapp.com/send?phone=+50258271288text=Hola, me interesa cotizar mi página web con ustedes" >Presiona acá para más información</a>
+
+				<p class="servicios__tituloF">¿Necesitas vender en línea? <br> Nosotros te apoyamos</p>
+
+			</section>
+
+			
+
+			
+			<section class="barras">
+				<p class="barras__titulo">Nuestra xperiencia</p>
+				<p class="barras__texto">La experiencia es la mejor maestra. A través de las vivencias, aprendemos lecciones valiosas que nos ayudan a crecer y a tomar decisiones más informadas. Es el camino hacia la sabiduría</p>
+
+				<div id="progress-bar1">
+					<p>Creación de sitios web desde cero</p>
+					<p class="porcentaje">95</p>
+				</div>
+				<div id="progress-bar2">
+					<p>Desarrollo de aplicaciones web interactivas</p>
+					<p class="porcentaje">100</p>
+				</div>
+				<div id="progress-bar3">
+				    <p>Optimización de sitios web para la velocidad y el rendimiento</p>
+					<p class="porcentaje">100</p>
+				</div>
+
+				<div id="progress-bar4">
+				    <p>Integración de APIs de terceros para ampliar funcionalidades</p>
+					<p class="porcentaje">95</p>
+				</div>
+
+				<div id="progress-bar5">
+				    <p>Creación y mantenimiento de tiendas en línea (e-commerce)</p>
+					<p class="porcentaje">90</p>
+				</div>
+
+				<div id="progress-bar6">
+				    <p>Experiencia en SEO para mejorar la visibilidad en línea.</p>
+					<p class="porcentaje">95</p>
+				</div>
+
+			</section>
+
+			<section class="justify">
+				<p class="servicios__titulo">Por que debo trabajar con Humingbird?</p>
+				<p class="servicios__texto">La decisión de confiar en nuestros servicios de desarrollo web no es una elección casual, es una inversión estratégica en el crecimiento y el éxito de tu negocio en el mundo digital.</p>
+				<img class="servicios__img" src="./humingbird/pagina/justify3.png" alt="">
+
+				<p class="servicios__texto">Nuestro enfoque en la vanguardia tecnológica significa que no solo seguimos las mejores prácticas, sino que las creamos. Trabajamos con las aplicaciones más avanzadas y eficientes para optimizar nuestros procesos y brindar resultados sobresalientes a nuestros clientes.</p>
+				<img class="servicios__img" src="./humingbird/pagina/justify4.png" alt="">
+
+				<p class="servicios__texto">Lo que nos distingue es nuestro compromiso con la excelencia en cada aspecto del desarrollo web. Creamos sitios web de alta calidad con diseños atractivos y funcionales, optimizados para un rendimiento excepcional.</p>
+				<img class="servicios__img" src="./humingbird/pagina/justify1.png" alt="">
+
+			</section>
+			
+
+
+
+
+			
+
+		</main>
 
 		
 
+		
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			<!-- <section id="paginas" class="paginasContainer">
-				<div class="textos">
-					<h2 class="h2-paginas">Construyendo tu Presencia Digital</h2>
-					<p>
-						Explorando las Bases de la Creación de Sitios Web: Desarrolla tu Presencia Digital de Forma Efectiva
-					</p>
-					<img class="imgP1" src="../humingbird/pagina/portada.png" alt="" />
-				</div>
-
-				<div class="paginasContainerLog inactive">
-					<div class="textos">
-						<h2 class="h2-paginas">Diseño Web De Vanguardia</h2>
-						<p>
-							Transforma tu visión en una realidad digital impresionante, <br />
-							contamos con planes mensuales, trimestrales y anuales
-						</p>
-						<img class="imgP2" src="../humingbird/pagina/portada3.png" />
-					</div>
-
-					<div class="textos">
-						<h2 class="h2-paginas">Nuestra Experiencia A Tu Servicio</h2>
-						<p>Contamos con 3 años de Experiencia en desarrollo web</p>
-						<img class="imgP3" src="../humingbird/pagina/portaad4.png" />
-					</div>
-
-					<div class="textos">
-						<h2 class="h2-paginas">
-							Diseño Responsive, Adapta Tu Sitio Web A <br />
-							Todos Los Dispositivos
-						</h2>
-						<p>
-							Descubre cómo el diseño responsive puede mejorar la experiencia de tus usuarios en cualquier pantalla <br />
-							desde smartphones hasta computadoras de escritorio.
-						</p>
-						<img class="imgP4" src="../humingbird/pagina/responsive.png" />
-					</div>
-
-					<div class="textos">
-						<h2 class="h2-paginas">Lleva Tu Visión Al Mundo Digital</h2>
-						<p>
-							Hemos sentado las bases de tu página web, esto es solo el comienzo, <br />
-							te guiaremos a través de los pasos para dar vida a tu visión en línea. <br />
-							¡Prepárate para hacer realidad tu sitio web de ensueño!.
-						</p>
-					</div>
-
-					<a class="enlacePaginasLog" href="whatsapp://send?phone=+50258271288&text=Hola, Me interesan cotizar una página web">
-						<img src="../cuentas-streaming/whatsapp.png" alt="" />
-						WhatsApp
-					</a>
-				</div>
-
-				<a class="enlacePaginas" href="./html/paginas.html">Conocer Más</a>
-			</section> -->
-
-			<section class="metodosDepago">
-				<h2>En Humingbird nos esforzamos por brindarte una experiencia de compras sencilla y segura</h2>
-				<p>Nuestra sección de pagos está diseñada pensando en ti, para que puedas realizar tus transacciones de manera rápida y segura en cualquiera de las siguientes plataformas</p>
-				<div id="pagos">
-					<img src="../humingbird/MetoPagos/bi.png" alt="" />
-					<img src="../humingbird/MetoPagos/Paypal.png" alt="" />
-					<img src="../humingbird/MetoPagos/binance.png" alt="" />
-					<img src="../humingbird/MetoPagos/rural.png" alt="" />
-				</div>
-			</section>
-		</main>
-
-		<footer id="Contactos" class="footer">
-			<div>
-				<a  href="https://www.facebook.com/Humingbird502" target="_blank" title="Facebook">
-				
-					<img class="footer-face" src="../humingbird/iconos/facebook.svg" alt=""/>
-				</a>
-	
-				<a  href="https://x.com/DevG_t?t=ptJJ2kG2L05-_tjq5XGIqA&s=07" target="_blank" title="Twitter" >
-				
-					<img class="footer-X" src="../humingbird/iconos/twitter.svg" alt="" />
-				</a>
-	
-				<a  href="whatsapp://send?phone=+50258271288&text=Hola, Me interesan los Servicios" target="_blank" title="Whatsapp">
-			
-					<img class="footer-Whats" src="../humingbird/iconos/whatsapp.svg" alt="" title="Whatsapp" />
-				</a>
-			</div>
-			<p>© 2023 Humingbird.SHOP Tel: +502 5827 1288</p>
-		</footer>
+		
 	</body>
 </html>	
