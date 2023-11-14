@@ -181,7 +181,7 @@ body{
 .servicios__titulo::before, .servicios__titulo::after{
   content: " ";
   display: inline-block;
-  width: 40%;
+  width: 50%;
   height: .1rem;
   background: #fff;
 }
